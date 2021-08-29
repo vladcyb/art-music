@@ -1,0 +1,28 @@
+.page-title {
+  text-align: center;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: calc(50px + var(--header-height));
+  transition:
+    transform 400ms ease,
+    opacity 400ms ease,
+    color 400ms ease;
+  z-index: var(--z-index-main-title);
+
+  &_on-top {
+    color: #f0f2f5;
+    font-size: 24px;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+
+    span {
+      color: red;
+    }
+  }
+
+  &.a {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+}

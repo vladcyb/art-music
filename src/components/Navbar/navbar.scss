@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: var(--z-index-navbar);
+
+  &__logo {
+    margin-right: 50px;
+    height: 100% !important;
+  }
+}
