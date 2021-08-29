@@ -1,5 +1,3 @@
-import './Contacts.scss';
-
 export const Contacts = () => (
   <section className="contacts">
     <h2>Контакты</h2>

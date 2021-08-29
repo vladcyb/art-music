@@ -1,8 +1,6 @@
-import './About.scss';
-
 export const About = () => (
-  <section className="about">
-    <div className="about__content">
+  <section>
+    <div>
       <h1>Art-Music</h1>
       бла бла бла бла бла бла бла бла бла
       бла бла бла бла бла бла бла бла бла

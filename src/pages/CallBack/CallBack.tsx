@@ -1,4 +1,3 @@
-import './CallBack.scss';
 import {Button, Card, Form, Input} from 'antd';
 
 export const CallBack = () => {
