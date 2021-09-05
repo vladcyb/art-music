@@ -11,14 +11,14 @@
     color 400ms ease;
   z-index: var(--z-index-main-title);
 
+  span {
+    color: red;
+  }
+
   &_on-top {
     color: #f0f2f5;
     font-size: 24px;
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
-
-    span {
-      color: red;
-    }
   }
 
   &.a {

@@ -5,6 +5,7 @@ import { Navbar } from './components';
 import { useFonts } from './shared/hooks/useFonts';
 import { useMedia } from './shared/hooks/useMedia';
 import './App.scss';
+import { Payment } from './pages/Payment';
 
 const { Footer, Content } = Layout;
 
@@ -31,6 +32,7 @@ export const App = () => {
         <Brands />
         <About />
         <CallBack />
+        <Payment />
         <Contacts />
       </Content>
       <Footer />

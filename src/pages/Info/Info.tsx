@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Appear } from '../../components/HOCs/Appear';
 import { PageTitle } from './PageTitle';
 import './Info.scss';
+import { Logo } from '../../components/icons';
 
 const musicIcons = [
   {
@@ -34,14 +35,22 @@ export const Info = () => {
         <PageTitle />
         <Appear timeout={500}>
           <div className="info__content">
-            Идейные соображения высшего порядка,
-            а также дальнейшее развитие различных
-            форм деятельности позволяет оценить
-            значение новых предложений. Разнообразный
-            и богатый опыт консультация с широким активом
-            обеспечивает широкому кругу. Не следует, однако забывать,
-            что дальнейшее развитие различных форм деятельности способствует
-            подготовки и реализации форм развития.
+            <div className="info__content-logo">
+              <Logo width={300} height={300} />
+            </div>
+            <div className="info__content-text">
+              <p>
+                ООО &quot;Арт-Мьюзик&quot; занимается поставкой и арендой звукового и
+                светового оборудования, а также их монтажем. В том числе
+                мы предлагаем широкий выбор любых музыкальных инструментов
+                от разных брендов, среди которых Yamaha, Das Audio, Turbosound,
+                Fender, Xline и другие.
+              </p>
+              <p>
+                Также мы участвуем в государственных закупках по закону №44-ФЗ
+                и №223-ФЗ.
+              </p>
+            </div>
           </div>
         </Appear>
       </div>
