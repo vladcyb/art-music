@@ -1,28 +1,32 @@
 .page-title {
+  --trans: 400ms ease;
+
   text-align: center;
   text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
   position: fixed;
   left: 0;
   right: 0;
-  top: calc(50px + var(--header-height));
+  top: calc(42px + var(--header-height));
+  line-height: var(--header-height);
   transition:
-    transform 400ms ease,
-    opacity 400ms ease,
-    color 400ms ease;
+    transform var(--trans),
+    opacity var(--trans),
+    color var(--trans),
+    font-size var(--trans);
   z-index: var(--z-index-main-title);
+  font-family: 'Kaisei HarunoUmi', serif;
 
-  span {
+  &::first-letter {
     color: red;
   }
 
   &_on-top {
     color: #f0f2f5;
-    font-size: 24px;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
   }
 
-  &.a {
-    transform: translateY(25px);
+  &.appear {
+    transform: translateY(25px) !important;
     opacity: 0;
   }
 }

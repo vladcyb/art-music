@@ -2,4 +2,11 @@
   h2 {
     text-align: center;
   }
+
+  &__content {
+    text-align: center;
+  }
+
+  min-height: 0 !important;
+  padding-bottom: 50px;
 }

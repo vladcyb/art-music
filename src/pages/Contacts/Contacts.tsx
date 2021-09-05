@@ -1,12 +1,25 @@
+import { Col, Row } from 'antd';
 import './Contacts.scss';
 
 export const Contacts = () => (
   <section className="contacts">
-    <h2>Контакты</h2>
-    <div>
-      <div>Адрес: г. Воронеж, ул. Машиностроителей, д. 82</div>
-      <div>Телефон: +7 920 402-22-99, +7 920 217-00-35</div>
-      <div>Email: vmb36@yandex.ru</div>
-    </div>
+    <Row justify="center">
+      <Col sm={18}>
+        <h2>Контакты</h2>
+        <div className="contacts__content">
+          <p>
+            Адрес: г. Воронеж, ул. Машиностроителей, д. 82
+          </p>
+          <p>
+            Телефон:&nbsp;
+            <a href="tel:+79204022299">+7 920 402-22-99</a>,&nbsp;
+            <a href="tel:+79202170035">+7 920 217-00-35</a>
+          </p>
+          <p>
+            Email: <a href="mailto:vmb36@yandex.ru">vmb36@yandex.ru</a>
+          </p>
+        </div>
+      </Col>
+    </Row>
   </section>
 );
