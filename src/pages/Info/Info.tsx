@@ -41,7 +41,7 @@ export const Info = () => (
           Art-Music
         </h1>
       </CSSTransition>
-      <CSSTransition appear in timeout={500}>
+      <CSSTransition appear in timeout={0}>
         <div className="info__content-wrapper">
           <Row className="info__content"
             wrap
