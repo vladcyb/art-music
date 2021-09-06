@@ -43,8 +43,8 @@
     //background: radial-gradient(143.75% 601.84% at -20.84% -95.13%, rgba(128, 128, 128, 0.461458) 0.01%, rgba(197, 197, 197, 0) 0.02%, #B1B2B7 100%);
     //background: radial-gradient(123.74% 2169.19% at 0% 0%, #FFFFFF 0%, rgba(161, 168, 205, 0.77432) 50.31%, rgba(81, 88, 123, 0.41) 99.27%);
     background: radial-gradient(92.16% 1413.86% at 34.82% 30%, #fff 0%, #d4dbff 60.73%, #acb2d2 99.27%);
-    animation: wrapper-animation 400ms ease;
-    transform-origin: center;
+    animation: wrapper-animation 1000ms ease;
+    transform-origin: top;
   }
 
   &__icons {
@@ -86,11 +86,27 @@
 }
 
 @keyframes wrapper-animation {
-  from {
-    transform: rotateX(10deg) scale(0.95);
+  0% {
+    transform: rotateX(30deg);
   }
 
-  to {
-    transform: rotateX(0) scale(1);
+  20% {
+    transform: rotateX(-15deg);
+  }
+
+  40% {
+    transform: rotateX(10deg);
+  }
+
+  60% {
+    transform: rotateX(-5deg);
+  }
+
+  80% {
+    transform: rotateX(3deg);
+  }
+
+  100% {
+    transform: rotateX(0);
   }
 }
