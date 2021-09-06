@@ -1,6 +1,25 @@
 .info {
   padding-top: 50px;
 
+  &__title {
+    text-align: center;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+
+    &::first-letter {
+      color: red;
+    }
+
+    &.appear {
+      transform: translateY(25px) !important;
+      opacity: 0;
+    }
+  }
+
   &__wrapper {
     position: relative;
   }

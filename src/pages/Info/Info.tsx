@@ -1,6 +1,5 @@
 import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { PageTitle } from './PageTitle';
 import { Logo } from '../../components/icons';
 import { Col, Row } from 'antd';
 import './Info.scss';
@@ -32,7 +31,16 @@ const musicIcons = [
 export const Info = () => (
   <section className="info">
     <div className="info__wrapper">
-      <PageTitle />
+      <CSSTransition
+        className="info__title"
+        appear
+        in
+        timeout={0}
+      >
+        <h1>
+          Art-Music
+        </h1>
+      </CSSTransition>
       <CSSTransition appear in timeout={500}>
         <div className="info__content-wrapper">
           <Row className="info__content"
