@@ -1,9 +1,9 @@
 import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Appear } from '../../components/HOCs/Appear';
 import { PageTitle } from './PageTitle';
-import './Info.scss';
 import { Logo } from '../../components/icons';
+import { Col, Row } from 'antd';
+import './Info.scss';
 
 const musicIcons = [
   {
@@ -28,45 +28,49 @@ const musicIcons = [
   },
 ];
 
-export const Info = () => {
-  return (
-    <section className="info">
-      <div className="info__content-wrapper">
-        <PageTitle />
-        <Appear timeout={500}>
-          <div className="info__content">
-            <div className="info__content-logo">
-              <Logo width={300} height={300} />
-            </div>
-            <div className="info__content-text">
+
+export const Info = () => (
+  <section className="info">
+    <div className="info__wrapper">
+      <PageTitle />
+      <CSSTransition appear in timeout={500}>
+        <div className="info__content-wrapper">
+          <Row className="info__content"
+            wrap
+            // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+            justify="start"
+            align="middle"
+          >
+            <Col offset={3} className="info__logo-wrapper" sm={6}>
+              <Logo width="12em" height="12em" />
+            </Col>
+            <Col sm={8}>
               <p>
                 ООО &quot;Арт-Мьюзик&quot; занимается поставкой и арендой звукового и
                 светового оборудования, а также их монтажем. В том числе
                 мы предлагаем широкий выбор любых музыкальных инструментов
                 от разных брендов, среди которых Yamaha, Das Audio, Turbosound,
-                Fender, Xline и другие.
+                Fender, XLine и другие.
               </p>
               <p>
                 Также мы участвуем в государственных закупках по закону №44-ФЗ
                 и №223-ФЗ.
               </p>
-            </div>
-          </div>
-        </Appear>
-      </div>
-      <TransitionGroup className="info__icons">
-        {musicIcons.map((item, i) => (
-          <CSSTransition
-            appear
-            in
-            timeout={1000 + 100 * i}
-            classNames={{ appear: 'a', appearDone: 'b' }}
-            key={item.id}
-          >
-            {item.component}
-          </CSSTransition>
-        ))}
-      </TransitionGroup>
-    </section>
-  );
-};
+            </Col>
+          </Row>
+        </div>
+      </CSSTransition>
+    </div>
+    <Row justify="center">
+      <Col sm={18}>
+        <TransitionGroup className="info__icons">
+          {musicIcons.map((item, i) => (
+            <CSSTransition appear timeout={1000 + 100 * i} in key={item.id}>
+              {item.component}
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
+      </Col>
+    </Row>
+  </section>
+);

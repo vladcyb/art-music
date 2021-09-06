@@ -1,7 +1,7 @@
 import './Brands.scss';
 
 export const Brands = () => (
-  <section className="brands">
+  <section className="brands" id="brands">
     <div>
       <h2>Наши бренды</h2>
       <p>

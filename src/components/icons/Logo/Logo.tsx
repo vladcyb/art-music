@@ -1,7 +1,10 @@
-import { IIcon } from '../IIcon';
+interface IIconProps {
+  width?: number | string;
+  height?: number | string;
+  className?: string;
+}
 
-
-export const Logo = ({ width, height, className }: IIcon) => (
+export const Logo = ({ width, height, className }: IIconProps) => (
   <svg className={className} width={width} height={height} viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fillRule="evenodd" clipRule="evenodd"
       d="M25.599 496.5C25.4332 501.646 25.3496 506.813 25.3496 512C25.3496 772.955 236.895 984.5 497.85 984.5C758.805 984.5 970.35 772.955 970.35 512C970.35 506.813 970.266 501.646 970.101 496.5H25.599Z"

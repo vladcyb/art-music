@@ -1,60 +1,45 @@
 .info {
   padding-top: 50px;
 
-  &__content-wrapper {
-    //width: 500px;
-    //margin: 0 auto;
+  &__wrapper {
     position: relative;
   }
 
   &__content {
     font-size: 18px;
     line-height: 24px;
-    //text-align: center;
     margin-top: 74px;
-    padding: 24px 300px;
-    background: #c4c4c4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //color: white;
+    padding: 24px 0;
+    transition: all 400ms ease;
+  }
 
-    &.a {
+  &__logo-wrapper {
+    text-align: center;
+  }
+
+  &__content-wrapper {
+    //background: radial-gradient(143.75% 601.84% at -20.84% -95.13%, rgba(128, 128, 128, 0.461458) 0.01%, rgba(197, 197, 197, 0) 0.02%, #B1B2B7 100%);
+    //background: radial-gradient(123.74% 2169.19% at 0% 0%, #FFFFFF 0%, rgba(161, 168, 205, 0.77432) 50.31%, rgba(81, 88, 123, 0.41) 99.27%);
+    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, #fff 0%, #d4dbff 60.73%, #acb2d2 99.27%);
+    transition: opacity 400ms ease;
+    opacity: 1;
+
+    &.appear {
+      .info__content {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+
       opacity: 0;
-      transform: translateX(-50%);
     }
-
-    transition: all 400ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-
-  &__content-logo {
-    flex: 1 0 350px;
-    margin-right: auto;
-  }
-
-  &__content-text {
-    padding-top: 24px;
   }
 
   &__icons {
-    margin: 200px auto 0 auto;
-    width: 80%;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     position: relative;
     padding-bottom: 32px;
-
-    svg {
-      font-size: 100px;
-      color: rgba(0, 0, 0, 0.1);
-
-      &.a {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-
-      transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
 
     &::after {
       display: block;
@@ -64,7 +49,19 @@
       right: 0;
       bottom: 0;
       height: 1px;
-      border-bottom: 2px solid #7c7c7c;
+      //border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    svg {
+      font-size: 100px;
+      color: rgba(0, 0, 0, 0.1);
+
+      &.appear {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }
