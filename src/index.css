@@ -16,13 +16,6 @@ body {
 
   /* z-index */
   --z-index-navbar: 100;
-  --z-index-main-title: 200;
-}
-
-h1 {
-  /* font-size: 40px; */
-  line-height: 48px;
-  font-weight: 700;
 }
 
 h2 {
