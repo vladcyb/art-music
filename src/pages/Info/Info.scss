@@ -10,6 +10,7 @@
     font-weight: 700;
     padding: 48px 0;
     animation: slide-animation var(--transition-duration) both;
+    //color: var(--c-dark);
 
     &::first-letter {
       color: red;
@@ -40,13 +41,15 @@
   }
 
   &__content-wrapper {
-    //background: radial-gradient(143.75% 601.84% at -20.84% -95.13%, rgba(128, 128, 128, 0.461458) 0.01%, rgba(197, 197, 197, 0) 0.02%, #B1B2B7 100%);
-    //background: radial-gradient(123.74% 2169.19% at 0% 0%, #FFFFFF 0%, rgba(161, 168, 205, 0.77432) 50.31%, rgba(81, 88, 123, 0.41) 99.27%);
-    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, #fff 0%, #d4dbff 60.73%, #acb2d2 99.27%);
-    animation: wrapper-animation 1500ms ease;
+    color: var(--c-dark-2);
+    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
+    //background: linear-gradient(90deg, rgba(4, 1, 213, 0.1) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(240, 214, 255, 0.8) 70%, rgba(163, 239, 255, 1) 100%);
+    box-shadow: 0 3px 4px rgb(255 191 244 / 38%), 0 -4px 30px rgb(196 198 255);
+    animation: wrapper-animation var(--transition-duration) ease;
     transform-origin: top;
+    backdrop-filter: blur(4px);
     filter: drop-shadow(0 3px 2px rgba(0, 4, 107, 0.3));
-    border-top: 1px solid rgba(0, 4, 107, 0.3);
+    font-weight: 500;
   }
 
   &__icons {
@@ -88,27 +91,13 @@
 }
 
 @keyframes wrapper-animation {
-  0% {
-    transform: rotateX(30deg);
+  from {
+    opacity: 0;
+    transform: translateZ(-50px);
   }
 
-  20% {
-    transform: rotateX(-15deg);
-  }
-
-  40% {
-    transform: rotateX(10deg);
-  }
-
-  60% {
-    transform: rotateX(-5deg);
-  }
-
-  80% {
-    transform: rotateX(3deg);
-  }
-
-  100% {
-    transform: rotateX(0);
+  to {
+    opacity: 1;
+    transform: translateZ(0);
   }
 }

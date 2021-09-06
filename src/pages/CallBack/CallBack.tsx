@@ -16,13 +16,13 @@ export const CallBack = () => {
               layout="vertical"
               onFinish={onSubmit}
             >
-              <Form.Item label="Как к вам обращаться?">
+              <Form.Item label="Как к вам обращаться:">
                 <Input name="name" />
               </Form.Item>
-              <Form.Item label="Телефон">
+              <Form.Item label="Телефон:">
                 <Input name="phone" />
               </Form.Item>
-              <Form.Item label="Email">
+              <Form.Item label="Email:">
                 <Input name="email" />
               </Form.Item>
               <Form.Item>
