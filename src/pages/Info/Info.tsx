@@ -1,8 +1,9 @@
 import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 import { Logo } from '../../components/icons';
 import { Col, Row } from 'antd';
 import './Info.scss';
+import { Fragment } from 'react';
 
 const musicIcons = [
   {
@@ -71,13 +72,15 @@ export const Info = () => (
     </div>
     <Row justify="center">
       <Col sm={18}>
-        <TransitionGroup className="info__icons">
-          {musicIcons.map((item, i) => (
-            <CSSTransition appear timeout={1000 + 100 * i} in key={item.id}>
-              {item.component}
-            </CSSTransition>
-          ))}
-        </TransitionGroup>
+        <CSSTransition className="info__icons" appear in timeout={0}>
+          <div>
+            {musicIcons.map((item) => (
+              <Fragment key={item.id}>
+                {item.component}
+              </Fragment>
+            ))}
+          </div>
+        </CSSTransition>
       </Col>
     </Row>
   </section>

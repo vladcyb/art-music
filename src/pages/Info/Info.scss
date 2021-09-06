@@ -1,8 +1,10 @@
 .info {
+  --transition: 400ms ease;
+
   &__title {
     text-align: center;
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
-    transition: all 400ms ease;
+    transition: all var(--transition);
     font-family: 'Kaisei HarunoUmi', serif;
     font-size: 48px;
     line-height: 48px;
@@ -27,7 +29,7 @@
     font-size: 18px;
     line-height: 24px;
     padding: 24px 0;
-    transition: all 400ms ease;
+    transition: all var(--transition);
   }
 
   &__logo-wrapper {
@@ -38,7 +40,7 @@
     //background: radial-gradient(143.75% 601.84% at -20.84% -95.13%, rgba(128, 128, 128, 0.461458) 0.01%, rgba(197, 197, 197, 0) 0.02%, #B1B2B7 100%);
     //background: radial-gradient(123.74% 2169.19% at 0% 0%, #FFFFFF 0%, rgba(161, 168, 205, 0.77432) 50.31%, rgba(81, 88, 123, 0.41) 99.27%);
     background: radial-gradient(92.16% 1413.86% at 34.82% 30%, #fff 0%, #d4dbff 60.73%, #acb2d2 99.27%);
-    transition: opacity 400ms ease;
+    transition: opacity var(--transition);
     opacity: 1;
 
     &.appear {
@@ -58,6 +60,13 @@
     position: relative;
     padding-bottom: 32px;
 
+    &.appear {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+
+    transition: all var(--transition);
+
     &::after {
       display: block;
       content: '';
@@ -72,13 +81,6 @@
     svg {
       font-size: 50px;
       color: rgba(0, 0, 0, 0.1);
-
-      &.appear {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-
-      transition: all 1000ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }
