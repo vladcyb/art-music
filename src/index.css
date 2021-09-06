@@ -37,3 +37,11 @@ h2 {
 ul {
   padding-left: 20px;
 }
+
+.ant-menu.ant-menu-dark {
+  background: transparent;
+}
+
+.ant-menu.ant-menu-dark > .ant-menu-item:hover {
+  background: transparent;
+}
