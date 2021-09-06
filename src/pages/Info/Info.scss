@@ -29,10 +29,19 @@
     font-size: 18px;
     line-height: 24px;
     padding: 24px 0;
+
+    p:last-child {
+      margin: 0;
+    }
   }
 
   &__logo-wrapper {
     text-align: center;
+  }
+
+  &__logo {
+    width: 200px;
+    height: 200px;
   }
 
   &__content-wrapper {
@@ -47,7 +56,7 @@
   }
 
   &__icons {
-    margin-top: 48px;
+    margin-top: 128px;
     display: flex;
     justify-content: space-between;
     position: relative;

@@ -1,9 +1,8 @@
 import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
 import { CSSTransition } from 'react-transition-group';
-import { Logo } from '../../components/icons';
 import { Col, Row } from 'antd';
-import './Info.scss';
 import { Fragment } from 'react';
+import './Info.scss';
 
 const musicIcons = [
   {
@@ -51,7 +50,7 @@ export const Info = () => (
             align="middle"
           >
             <Col offset={3} className="info__logo-wrapper" sm={6}>
-              <Logo width="12em" height="12em" />
+              <img className="info__logo" src="/i/logo.svg" alt="логотоп Art-Music" />
             </Col>
             <Col sm={8}>
               <p>
