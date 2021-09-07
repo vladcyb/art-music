@@ -42,9 +42,8 @@
 
   &__content-wrapper {
     color: var(--c-dark-2);
-    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
-    //background: linear-gradient(90deg, rgba(4, 1, 213, 0.1) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(240, 214, 255, 0.8) 70%, rgba(163, 239, 255, 1) 100%);
-    box-shadow: 0 3px 4px rgb(255 191 244 / 38%), 0 -4px 30px rgb(196 198 255);
+    background: linear-gradient(90deg, rgba(4, 1, 213, 0.1) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(240, 214, 255, 0.8) 70%, rgba(163, 239, 255, 1) 100%);
+    //background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
     animation: wrapper-animation var(--transition-duration) ease;
     transform-origin: top;
     backdrop-filter: blur(4px);
