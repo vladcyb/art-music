@@ -24,8 +24,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   perspective: 800px;
   font-size: 12px;
-  background-image: url(./assets/i/bg.png);
-  background-attachment: fixed;
+  background: url(./assets/i/bg.png) top / cover no-repeat fixed;
 }
 
 *::selection {
