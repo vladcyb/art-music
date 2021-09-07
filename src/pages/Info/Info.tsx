@@ -1,6 +1,7 @@
 import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
 import { Col, Row } from 'antd';
 import { Fragment } from 'react';
+import { standardGutter } from '../../shared/constants/gutter';
 import './Info.scss';
 
 const musicIcons = [
@@ -31,17 +32,17 @@ export const Info = () => (
   <section className="info">
     <div className="info__wrapper">
       <h1 className="info__title">
-          Art-Music
+        Art-Music
       </h1>
       <div className="info__content-wrapper">
         <Row className="info__content"
           wrap
-          // gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
+          gutter={standardGutter}
           justify="start"
           align="middle"
         >
           <Col offset={3} className="info__logo-wrapper" sm={6}>
-            <img className="info__logo" src="/i/logo.svg" alt="логотоп Art-Music" />
+            <img className="info__logo" src="/i/logo.svg" alt="Логотоп Art-Music" />
           </Col>
           <Col sm={10}>
             <p>
