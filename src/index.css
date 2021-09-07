@@ -22,9 +22,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  perspective: 800px;
   font-size: 12px;
-  background: url(./assets/i/bg.png) top / cover no-repeat fixed;
 }
 
 *::selection {
@@ -42,24 +40,22 @@ h2 {
   font-weight: bold;
 }
 
-.ant-layout {
-  background-color: transparent;
-}
-
 ul {
   padding-left: 20px;
 }
 
+/* Antd */
+.ant-layout {
+  background: url(./assets/i/bg.png) top / cover no-repeat fixed;
+}
+
+.ant-menu.ant-menu-dark > .ant-menu-item:hover,
 .ant-menu.ant-menu-dark {
   background: transparent;
 }
 
-.ant-menu.ant-menu-dark > .ant-menu-item:hover {
-  background: transparent;
-}
-
 .ant-layout-header {
-  background: var(--c-dark-2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .ant-row {
