@@ -1,5 +1,7 @@
-.app {
-  padding-top: calc(var(--header-height));
+.ant-layout.app {
+  padding: calc(var(--header-height)) 0 250px 0;
+  background: url(./assets/i/bg.webp) top / cover no-repeat fixed var(--c-dark);
+  color: var(--c-light);
 
   &_loading {
     padding-top: 0;
@@ -14,6 +16,7 @@
 
     &:not(:first-child) {
       margin-top: 32px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.57);
     }
   }
 

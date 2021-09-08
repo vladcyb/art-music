@@ -14,7 +14,8 @@
   --c-dark: #383838;
   --c-gray: #888;
   --c-dark-2: #232323;
-  --c-light: rgba(255, 255, 255, 0.76);
+  --c-light: rgb(255, 255, 255);
+  --c-light-blue: #40a9ff;
 
   /* z-index */
   --z-index-navbar: 100;
@@ -38,6 +39,8 @@ body {
 
 h2 {
   font-weight: bold;
+  margin-bottom: 1.5em;
+  color: var(--c-light);
 }
 
 ul {
@@ -45,20 +48,23 @@ ul {
 }
 
 /* Antd */
-.ant-layout {
-  background: url(./assets/i/bg.png) top / cover no-repeat fixed;
-}
-
 .ant-menu.ant-menu-dark > .ant-menu-item:hover,
 .ant-menu.ant-menu-dark {
   background: transparent;
 }
 
-.ant-layout-header {
-  background: rgba(0, 0, 0, 0.2);
-}
-
 .ant-row {
   margin-right: 0 !important;
   margin-left: 0 !important;
+}
+
+a {
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgb(52, 21, 255);
+}
+
+a:hover,
+a:focus {
+  color: var(--c-light-blue);
 }
