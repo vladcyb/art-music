@@ -2,7 +2,7 @@ import { Col, Row } from 'antd';
 import './Payment.scss';
 
 export const Payment = () => (
-  <section className="payment">
+  <section className="payment card">
     <h2>Оплата и доставка</h2>
     <Row justify="center">
       <Col sm={18}>

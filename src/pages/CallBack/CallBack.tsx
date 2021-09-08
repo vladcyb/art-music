@@ -7,7 +7,7 @@ export const CallBack = () => {
   };
 
   return (
-    <section className="callback">
+    <section className="callback card">
       <h2>Заказать бесплатный звонок</h2>
       <Row justify="center">
         <Col sm={10}>

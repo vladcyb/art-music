@@ -2,7 +2,7 @@ import './About.scss';
 import { Col, Row } from 'antd';
 
 export const About = () => (
-  <section className="about" id="about">
+  <section className="about card" id="about">
     <h2>О нас</h2>
     <Row justify="center">
       <Col sm={18}>
