@@ -8,10 +8,14 @@ export const CallBack = () => {
 
   return (
     <section className="callback">
-      <h2>Заказать бесплатный звонок</h2>
       <Row justify="center">
         <Col sm={10}>
-          <Card>
+          <h2>Заказать бесплатный звонок</h2>
+        </Col>
+      </Row>
+      <Row justify="center">
+        <Col sm={10}>
+          <Card className="callback__card">
             <Form
               layout="vertical"
               onFinish={onSubmit}
@@ -25,9 +29,9 @@ export const CallBack = () => {
               <Form.Item label="Email:">
                 <Input name="email" />
               </Form.Item>
-              <Form.Item>
+              <Form.Item noStyle>
                 <Button type="primary" htmlType="submit" block>
-                Отправить
+                  Отправить
                 </Button>
               </Form.Item>
             </Form>
