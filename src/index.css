@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 *::selection {
@@ -33,7 +33,7 @@ body {
 
 @media screen and (min-width: 992px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

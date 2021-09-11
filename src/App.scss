@@ -10,10 +10,8 @@
   }
 
   section {
-    min-height: calc(100vh - var(--header-height));
-
     &:not(:first-child) {
-      margin-top: 32px;
+      margin-top: 128px;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.57);
     }
   }

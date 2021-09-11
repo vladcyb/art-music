@@ -7,13 +7,14 @@ const { Header } = Layout;
 export const Navbar = () => (
   <Header className="navbar">
     <Menu
+      disabledOverflow
       theme="dark"
       mode="horizontal"
       selectable={false}
       onClick={(info) => {
         document.getElementById(info.key)?.scrollIntoView({
           behavior: 'smooth',
-          block: 'end',
+          block: 'center',
         });
       }}
     >

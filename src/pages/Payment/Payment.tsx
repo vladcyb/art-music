@@ -5,7 +5,7 @@ export const Payment = () => (
   <section className="payment">
     <Row justify="center">
       <Col sm={24}>
-        <h2 style={{ textAlign: 'left' }}>Оплата и доставка</h2>
+        <h2>Оплата и доставка</h2>
       </Col>
     </Row>
     <Row justify="center">
