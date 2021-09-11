@@ -61,7 +61,7 @@ export const Info = () => (
       </div>
     </div>
     <Row justify="center">
-      <Col sm={18}>
+      <Col sm={24}>
         <div className="info__icons">
           {musicIcons.map((item) => (
             <Fragment key={item.id}>

@@ -1,14 +1,12 @@
 .ant-layout.app {
+  --content-padding-inline: 200px;
+
   padding: calc(var(--header-height)) 0 250px 0;
   background: url(./assets/i/bg.webp) top / cover no-repeat fixed var(--c-dark);
   color: var(--c-light);
 
-  &_loading {
-    padding-top: 0;
-
-    section {
-      height: 100vh;
-    }
+  .app__content {
+    padding: 0 var(--content-padding-inline);
   }
 
   section {
@@ -18,11 +16,5 @@
       margin-top: 32px;
       text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.57);
     }
-  }
-
-  &__preloader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }

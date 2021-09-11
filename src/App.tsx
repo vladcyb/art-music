@@ -10,7 +10,7 @@ import './App.scss';
 export const App = () => (
   <Layout className="app">
     <Navbar />
-    <Content>
+    <Content className="app__content">
       <Info />
       <Brands />
       <About />

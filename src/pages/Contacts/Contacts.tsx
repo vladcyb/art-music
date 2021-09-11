@@ -4,7 +4,7 @@ import './Contacts.scss';
 export const Contacts = () => (
   <section className="contacts" id="contacts">
     <Row justify="center">
-      <Col sm={18}>
+      <Col sm={24}>
         <h2>Контакты</h2>
         <div className="contacts__content">
           <p>

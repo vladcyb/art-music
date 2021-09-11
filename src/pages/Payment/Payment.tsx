@@ -3,9 +3,13 @@ import './Payment.scss';
 
 export const Payment = () => (
   <section className="payment">
-    <h2>Оплата и доставка</h2>
     <Row justify="center">
-      <Col sm={18}>
+      <Col sm={24}>
+        <h2 style={{ textAlign: 'left' }}>Оплата и доставка</h2>
+      </Col>
+    </Row>
+    <Row justify="center">
+      <Col sm={24}>
         <p>
           Мы доставляем заказы по всей России следующими транспортными компаниями:
         </p>

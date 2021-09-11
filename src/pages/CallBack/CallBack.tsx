@@ -8,7 +8,11 @@ export const CallBack = () => {
 
   return (
     <section className="callback">
-      <h2>Заказать бесплатный звонок</h2>
+      <Row justify="center">
+        <Col sm={10}>
+          <h2>Заказать бесплатный звонок</h2>
+        </Col>
+      </Row>
       <Row justify="center">
         <Col sm={10}>
           <Card className="callback__card">
