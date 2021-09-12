@@ -41,6 +41,10 @@
   --z-index-navbar: 100;
 }
 
+body {
+  perspective: 800px;
+}
+
 body,
 .ant-card {
   font-family: 'Montserrat', sans-serif;
@@ -96,7 +100,7 @@ a:focus {
   background: rgba(0, 0, 0, 0.33);
   border: 1px solid var(--c-black);
   margin-top: var(--content-margin-block);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(25px);
 
   & > .ant-card-body {
     @media screen and (min-width: $breakpoint-sm) {

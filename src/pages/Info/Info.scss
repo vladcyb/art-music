@@ -24,6 +24,14 @@
       font-size: 40px;
       padding: 48px 0;
     }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      font-size: 54px;
+    }
   }
 
   &__wrapper {
