@@ -8,11 +8,13 @@ export const CallBack = () => {
 
   return (
     <Row justify="center">
-      <Col className="" xs={24} sm={18} lg={14}>
+      <Col xs={24} sm={18} lg={16} xl={14} xxl={12}>
         <Card className="card callback">
           <Row justify="center">
             <Col xs={24}>
-              <h2>Заказать&nbsp;бесплатный&nbsp;звонок</h2>
+              <h2>Заказать бесплатный&nbsp;звонок</h2>
+            </Col>
+            <Col xs={24}>
               <Card className="callback__card">
                 <Form
                   layout="vertical"
@@ -29,7 +31,7 @@ export const CallBack = () => {
                   </Form.Item>
                   <Form.Item noStyle>
                     <Button type="primary" htmlType="submit" block>
-                  Отправить
+                      Отправить
                     </Button>
                   </Form.Item>
                 </Form>

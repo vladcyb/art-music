@@ -1,0 +1,7 @@
+@use '../../assets/scss/vars' as *;
+
+.contacts {
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 550px;
+  }
+}
