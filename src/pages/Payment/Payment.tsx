@@ -1,8 +1,8 @@
-import { Col, Row } from 'antd';
+import { Card, Col, Row } from 'antd';
 import './Payment.scss';
 
 export const Payment = () => (
-  <section className="payment">
+  <Card className="section payment">
     <Row justify="center">
       <Col sm={24}>
         <h2>Оплата и доставка</h2>
@@ -44,5 +44,5 @@ export const Payment = () => (
         </ul>
       </Col>
     </Row>
-  </section>
+  </Card>
 );

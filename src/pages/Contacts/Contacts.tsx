@@ -1,10 +1,10 @@
-import { Col, Row } from 'antd';
+import { Card, Col, Row } from 'antd';
 import './Contacts.scss';
 
 export const Contacts = () => (
-  <section className="contacts" id="contacts">
-    <Row>
-      <Col sm={24}>
+  <Row>
+    <Col sm={12}>
+      <Card className="section contacts" id="contacts">
         <h2>Контакты</h2>
         <div className="contacts__content">
           <p>
@@ -19,7 +19,7 @@ export const Contacts = () => (
             Email: <a href="mailto:vmb36@yandex.ru">vmb36@yandex.ru</a>
           </p>
         </div>
-      </Col>
-    </Row>
-  </section>
+      </Card>
+    </Col>
+  </Row>
 );
