@@ -95,4 +95,10 @@ a:focus {
   background: rgba(0, 0, 0, 0.33);
   border: none;
   margin-top: var(--content-margin-block);
+
+  & > .ant-card-body {
+    @media screen and (min-width: $breakpoint-sm) {
+      padding: 40px;
+    }
+  }
 }

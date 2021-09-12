@@ -2,7 +2,7 @@ import { Card, Col, Row } from 'antd';
 
 export const Contacts = () => (
   <Row id="contacts">
-    <Col className="contacts" xs={24}>
+    <Col className="contacts" xs={24} xl={14}>
       <Card className="card">
         <h2>Контакты</h2>
         <div className="contacts__content">
