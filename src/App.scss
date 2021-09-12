@@ -1,7 +1,21 @@
+@use './assets/scss/vars' as *;
+
 .ant-layout.app {
-  --content-margin-inline: 150px;
+  --content-margin-inline: 5px;
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    --content-margin-inline: 50px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    --content-margin-inline: 100px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    --content-margin-inline: 150px;
+  }
 
   padding: calc(var(--header-height)) 0 250px 0;
   background: url(./assets/i/bg.webp) top / cover no-repeat fixed var(--c-dark);

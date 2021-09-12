@@ -1,3 +1,5 @@
+@use '../../assets/scss/vars' as *;
+
 .info {
   --transition-duration: 350ms;
 
@@ -5,14 +7,20 @@
     text-align: center;
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
     font-family: 'Kaisei HarunoUmi', serif;
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 0;
     font-weight: 700;
-    padding: 48px 0;
+    padding: 24px 0;
     animation: slide-animation var(--transition-duration) both;
 
     &::first-letter {
       color: red; // TODO
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 40px;
+      padding: 48px 0;
     }
   }
 
@@ -35,8 +43,8 @@
   }
 
   &__logo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
   }
 
   &__content-wrapper {

@@ -2,14 +2,10 @@ import { Card, Col, Row } from 'antd';
 import './Payment.scss';
 
 export const Payment = () => (
-  <Card className="section payment">
-    <Row justify="center">
-      <Col sm={24}>
+  <Row className="section payment" justify="center">
+    <Col sm={24}>
+      <Card className="payment__card">
         <h2>Оплата и доставка</h2>
-      </Col>
-    </Row>
-    <Row justify="center">
-      <Col sm={24}>
         <p>
           Мы доставляем заказы по всей России следующими транспортными компаниями:
         </p>
@@ -42,7 +38,7 @@ export const Payment = () => (
             в том числе при покупке свыше 5000 рублей.
           </li>
         </ul>
-      </Col>
-    </Row>
-  </Card>
+      </Card>
+    </Col>
+  </Row>
 );

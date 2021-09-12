@@ -1,6 +1,11 @@
+@use './assets/scss/vars' as *;
+
 *,
 *::before,
-*::after {
+*::after,
+ol,
+ul,
+dl {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,13 +24,6 @@
 
   /* z-index */
   --z-index-navbar: 100;
-
-  /* breakpoints */
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --breakpoint-xxl: 1600px;
 }
 
 body,
@@ -40,7 +38,7 @@ body,
   color: var(--c-white);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $breakpoint-md) {
   body,
   .ant-card {
     font-size: 16px;
@@ -82,7 +80,18 @@ a:focus {
 .section {
   background: rgba(0, 0, 0, 0.33);
   border: none;
-  margin-top: 128px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    margin-top: 128px;
+  }
+
+  .ant-card {
+    background: none;
+  }
 }
 
 .section > .ant-card-body {

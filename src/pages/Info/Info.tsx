@@ -37,14 +37,14 @@ export const Info = () => (
       <div className="info__content-wrapper">
         <Row className="info__content"
           wrap
-          gutter={standardGutter}
-          justify="start"
+          gutter={{ ...standardGutter }}
+          justify="center"
           align="middle"
         >
-          <Col offset={3} className="info__logo-wrapper" sm={6}>
+          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={6} xl={4}>
             <img className="info__logo" src="/i/logo.svg" alt="Логотоп Art-Music" />
           </Col>
-          <Col sm={10}>
+          <Col xs={22} sm={18} md={16} lg={14} xl={12}>
             <p>
               ООО &quot;Арт-Мьюзик&quot; занимается поставкой и арендой звукового и
               светового оборудования, а также их монтажем. В том числе

@@ -7,39 +7,31 @@ export const CallBack = () => {
   };
 
   return (
-    <Row justify="center">
-      <Col sm={12}>
-        <Card className="section callback">
-          <Row justify="center">
-            <Col sm={24}>
-              <h2>Заказать бесплатный звонок</h2>
-            </Col>
-          </Row>
-          <Row justify="center">
-            <Col sm={24}>
-              <Card className="callback__card">
-                <Form
-                  layout="vertical"
-                  onFinish={onSubmit}
-                >
-                  <Form.Item label="Как к вам обращаться:">
-                    <Input name="name" />
-                  </Form.Item>
-                  <Form.Item label="Телефон:">
-                    <Input name="phone" />
-                  </Form.Item>
-                  <Form.Item label="Email:">
-                    <Input name="email" />
-                  </Form.Item>
-                  <Form.Item noStyle>
-                    <Button type="primary" htmlType="submit" block>
-                      Отправить
-                    </Button>
-                  </Form.Item>
-                </Form>
-              </Card>
-            </Col>
-          </Row>
+    <Row className="section callback" justify="center">
+      <Col className="" xs={24} sm={12}>
+        <Card bordered={false}>
+          <h2>Заказать бесплатный звонок</h2>
+          <Card className="callback__card">
+            <Form
+              layout="vertical"
+              onFinish={onSubmit}
+            >
+              <Form.Item label="Как к вам обращаться:">
+                <Input name="name" />
+              </Form.Item>
+              <Form.Item label="Телефон:">
+                <Input name="phone" />
+              </Form.Item>
+              <Form.Item label="Email:">
+                <Input name="email" />
+              </Form.Item>
+              <Form.Item noStyle>
+                <Button type="primary" htmlType="submit" block>
+                  Отправить
+                </Button>
+              </Form.Item>
+            </Form>
+          </Card>
         </Card>
       </Col>
     </Row>

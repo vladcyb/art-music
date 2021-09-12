@@ -1,4 +1,7 @@
 {
   "extends": "stylelint-config-standard",
-  "ignoreFiles": ["**/*.html"]
+  "ignoreFiles": ["**/*.html"],
+  "rules": {
+    "at-rule-no-unknown": null
+  }
 }
