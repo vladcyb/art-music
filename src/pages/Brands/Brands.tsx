@@ -10,7 +10,7 @@ export const Brands = () => (
           <Col xs={12} sm={6} lg={4}>
             <ul>
               <li>Yamaha</li>
-              <li>Das Audio</li>
+              <li>Das&nbsp;Audio</li>
               <li>Turbosound</li>
               <li>Fender</li>
               <li>XLine</li>
