@@ -1,9 +1,9 @@
 import { Card, Col, Row } from 'antd';
 
 export const Contacts = () => (
-  <Row className="section" id="contacts">
-    <Col className="contacts" xs={12} sm={12}>
-      <Card bordered={false}>
+  <Row id="contacts">
+    <Col className="contacts" xs={24}>
+      <Card className="card">
         <h2>Контакты</h2>
         <div className="contacts__content">
           <p>

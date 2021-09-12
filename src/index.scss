@@ -2,10 +2,7 @@
 
 *,
 *::before,
-*::after,
-ol,
-ul,
-dl {
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,6 +11,23 @@ dl {
 :root {
   /* variables */
   --header-height: 64px;
+  --content-margin-block: 20px;
+  --content-margin-inline: 5px;
+  --content-padding-block: 50px;
+  --content-padding-inline: 100px;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    --content-margin-inline: 50px;
+    --content-margin-block: 50px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    --content-margin-inline: 100px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    --content-margin-inline: 150px;
+  }
 
   /* colors */
   --c-dark: #383838;
@@ -77,23 +91,8 @@ a:focus {
   color: var(--c-light-blue);
 }
 
-.section {
+.card {
   background: rgba(0, 0, 0, 0.33);
   border: none;
-
-  &:first-of-type {
-    margin-top: 0;
-  }
-
-  @media screen and (min-width: $breakpoint-sm) {
-    margin-top: 128px;
-  }
-
-  .ant-card {
-    background: none;
-  }
-}
-
-.section > .ant-card-body {
-  padding: 40px;
+  margin-top: var(--content-margin-block);
 }

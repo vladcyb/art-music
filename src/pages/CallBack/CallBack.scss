@@ -9,5 +9,15 @@
     label {
       color: var(--c-white) !important;
     }
+
+    //border: none !important;
+
+    .ant-card {
+      margin: 0 calc(-1 * var(--));
+    }
+
+    .ant-card-body {
+      //padding: 0;
+    }
   }
 }

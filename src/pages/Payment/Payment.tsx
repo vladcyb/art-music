@@ -1,10 +1,9 @@
 import { Card, Col, Row } from 'antd';
-import './Payment.scss';
 
 export const Payment = () => (
-  <Row className="section payment" justify="center">
+  <Row className="payment" justify="center">
     <Col sm={24}>
-      <Card className="payment__card">
+      <Card className="card payment__card">
         <h2>Оплата и доставка</h2>
         <p>
           Мы доставляем заказы по всей России следующими транспортными компаниями:
