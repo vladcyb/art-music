@@ -1,5 +1,4 @@
 import { Card, Col, Row } from 'antd';
-import './Contacts.scss';
 
 export const Contacts = () => (
   <Row>
