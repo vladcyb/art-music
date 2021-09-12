@@ -97,6 +97,7 @@ a:focus {
   border: 1px solid var(--c-black);
   margin-top: var(--content-margin-block);
   backdrop-filter: blur(25px);
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 1);
 
   & > .ant-card-body {
     @media screen and (min-width: $breakpoint-sm) {
