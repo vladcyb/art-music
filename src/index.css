@@ -19,6 +19,13 @@
 
   /* z-index */
   --z-index-navbar: 100;
+
+  /* breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1600px;
 }
 
 body,
@@ -30,7 +37,7 @@ body,
 
 *::selection {
   background: rgba(0, 0, 0, 0.58);
-  color: white;
+  color: var(--c-white);
 }
 
 @media screen and (min-width: 992px) {
@@ -63,7 +70,7 @@ ul {
 
 a {
   font-weight: 600;
-  color: #fff;
+  color: var(--c-white);
   text-shadow: 1px 1px 10px rgb(52, 21, 255);
 }
 

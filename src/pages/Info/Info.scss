@@ -10,10 +10,9 @@
     font-weight: 700;
     padding: 48px 0;
     animation: slide-animation var(--transition-duration) both;
-    //color: var(--c-dark);
 
     &::first-letter {
-      color: red;
+      color: red; // TODO
     }
   }
 
@@ -58,7 +57,7 @@
 
     svg {
       font-size: 50px;
-      color: rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0, 0.1); // TODO
     }
   }
 }
