@@ -2,6 +2,8 @@
 
 .contacts {
   @media screen and (min-width: $breakpoint-lg) {
-    max-width: 550px;
+    .card {
+      max-width: 550px;
+    }
   }
 }
