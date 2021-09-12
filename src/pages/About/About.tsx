@@ -1,8 +1,8 @@
+import { Card, Col, Row } from 'antd';
 import './About.scss';
-import { Col, Row } from 'antd';
 
 export const About = () => (
-  <section className="about" id="about">
+  <Card className="section about" id="about">
     <Row justify="center">
       <Col sm={24}>
         <h2>О нас</h2>
@@ -24,5 +24,5 @@ export const About = () => (
         </p>
       </Col>
     </Row>
-  </section>
+  </Card>
 );
