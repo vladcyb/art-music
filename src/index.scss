@@ -108,3 +108,9 @@ a:focus {
     }
   }
 }
+
+#brands,
+#contacts,
+#about {
+  scroll-margin-block: var(--header-height);
+}

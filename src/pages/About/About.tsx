@@ -1,9 +1,9 @@
 import { Card, Col, Row } from 'antd';
 
 export const About = () => (
-  <Row className="about" justify="center" id="about">
+  <Row className="about" justify="center">
     <Col xs={24} sm={24}>
-      <Card className="card">
+      <Card className="card" id="about">
         <h2>О нас</h2>
         <p>
           {/* eslint-disable-next-line max-len */}

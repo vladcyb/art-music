@@ -2,9 +2,9 @@ import { Card, Col, Row } from 'antd';
 import './Contacts.scss';
 
 export const Contacts = () => (
-  <Row id="contacts">
+  <Row>
     <Col className="contacts" xs={24} xl={14}>
-      <Card className="card">
+      <Card className="card" id="contacts">
         <h2>Контакты</h2>
         <div className="contacts__content">
           <p>
