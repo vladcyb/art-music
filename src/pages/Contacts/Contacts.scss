@@ -1,6 +1,11 @@
 @use '../../assets/scss/vars' as *;
 
 .contacts {
+  a {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
   @media screen and (min-width: $breakpoint-lg) {
     .card {
       max-width: 550px;
