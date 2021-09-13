@@ -14,7 +14,7 @@ export const Navbar = () => (
       onClick={(info) => {
         document.getElementById(info.key)?.scrollIntoView({
           behavior: 'smooth',
-          block: 'center',
+          block: 'start',
         });
       }}
     >

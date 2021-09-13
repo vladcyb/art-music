@@ -1,9 +1,17 @@
 .brands {
+  .card {
+    margin-top: 0;
+  }
+
   h2 {
     text-align: center;
   }
 
   ul {
     text-align: center;
+
+    li {
+      font-weight: 500;
+    }
   }
 }

@@ -37,20 +37,25 @@ export const Info = () => (
       <div className="info__content-wrapper">
         <Row className="info__content"
           wrap
-          gutter={standardGutter}
-          justify="start"
+          gutter={{ ...standardGutter }}
+          justify="center"
           align="middle"
         >
-          <Col offset={3} className="info__logo-wrapper" sm={6}>
+          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={6} xl={4}>
             <img className="info__logo" src="/i/logo.svg" alt="Логотоп Art-Music" />
           </Col>
-          <Col sm={10}>
+          <Col xs={22} sm={18} md={16} lg={14} xl={12}>
             <p>
               ООО &quot;Арт-Мьюзик&quot; занимается поставкой и арендой звукового и
-              светового оборудования, а также их монтажем. В том числе
+              светового оборудования, а&nbsp;также их монтажем. В том числе
               мы предлагаем широкий выбор любых музыкальных инструментов
-              от разных брендов, среди которых Yamaha, Das Audio, Turbosound,
-              Fender, XLine и другие.
+              от разных брендов, среди которых{' '}
+              <b>Yamaha</b>,{' '}
+              <b>Das&nbsp;Audio</b>,{' '}
+              <b>Turbosound</b>,{' '}
+              <b>Fender</b>,{' '}
+              <b>Line</b>{' '}
+              и другие.
             </p>
             <p>
               Также мы участвуем в государственных закупках по закону №44-ФЗ

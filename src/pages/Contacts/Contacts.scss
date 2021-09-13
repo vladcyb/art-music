@@ -1,0 +1,9 @@
+@use '../../assets/scss/vars' as *;
+
+.contacts {
+  @media screen and (min-width: $breakpoint-lg) {
+    .card {
+      max-width: 550px;
+    }
+  }
+}

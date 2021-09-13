@@ -8,15 +8,13 @@ export const CallBack = () => {
 
   return (
     <Row justify="center">
-      <Col sm={12}>
-        <Card className="section callback">
+      <Col xs={24} sm={18} lg={16} xl={14} xxl={12}>
+        <Card className="card callback">
           <Row justify="center">
-            <Col sm={24}>
-              <h2>Заказать бесплатный звонок</h2>
+            <Col xs={24}>
+              <h2>Заказать бесплатный&nbsp;звонок</h2>
             </Col>
-          </Row>
-          <Row justify="center">
-            <Col sm={24}>
+            <Col xs={24}>
               <Card className="callback__card">
                 <Form
                   layout="vertical"

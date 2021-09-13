@@ -1,11 +1,23 @@
-.ant-layout.app {
-  --content-margin-inline: 150px;
-  --content-padding-block: 50px;
-  --content-padding-inline: 100px;
+@use './assets/scss/vars' as *;
 
+.ant-layout.app {
   padding: calc(var(--header-height)) 0 250px 0;
-  background: url(./assets/i/bg.webp) top / cover no-repeat fixed var(--c-dark);
-  //color: #000;
+  background: transparent;
+
+  &::after {
+    content: "";
+    position: fixed; /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1; /* needed to keep in the background */
+    background: url(./assets/i/bg.webp) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .app__content {
     margin: 0 var(--content-margin-inline);
