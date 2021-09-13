@@ -1,26 +1,36 @@
-import { Layout, Menu } from 'antd';
+import { Anchor, Layout } from 'antd';
 import './navbar.scss';
 
 const { Header } = Layout;
+const { Link } = Anchor;
+
+type LinkType = {
+  name: string,
+  key: string,
+}
+
+const links: LinkType[] = [
+  {
+    name: 'Бренды',
+    key: '#brands',
+  },
+  {
+    name: 'О нас',
+    key: '#about',
+  },
+  {
+    name: 'Контакты',
+    key: '#contacts',
+  },
+];
 
 
 export const Navbar = () => (
   <Header className="navbar">
-    <Menu
-      disabledOverflow
-      theme="dark"
-      mode="horizontal"
-      selectable={false}
-      onClick={(info) => {
-        document.getElementById(info.key)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }}
-    >
-      <Menu.Item key="brands">Бренды</Menu.Item>
-      <Menu.Item key="about">О нас</Menu.Item>
-      <Menu.Item key="contacts">Контакты</Menu.Item>
-    </Menu>
+    <Anchor bounds={200} targetOffset={84}>
+      {links.map((link) => (
+        <Link href={link.key} title={link.name} key={link.key} />
+      ))}
+    </Anchor>
   </Header>
 );

@@ -6,8 +6,37 @@
   top: 0;
   z-index: var(--z-index-navbar);
 
+  a {
+    display: inline-block;
+  }
+
   &__logo {
     margin-right: 50px;
     height: 100% !important;
+  }
+
+  // Customize Ant Design styles
+
+  .ant-anchor-ink {
+    display: none;
+  }
+
+  .ant-anchor-link {
+    padding: 0;
+    display: inline-block;
+    line-height: var(--header-height);
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    > .ant-anchor-link-title {
+      text-shadow: none;
+      color: var(--c-white-2);
+    }
+
+    &-active > .ant-anchor-link-title {
+      color: var(--c-white);
+    }
   }
 }
