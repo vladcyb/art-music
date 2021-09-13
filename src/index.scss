@@ -39,8 +39,7 @@ body,
 .ant-card {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: var(--c-white-2);
-  text-shadow: 1px 1px 2px black;
+  //text-shadow: 10px 10px 4px black;
 }
 
 *::selection {
@@ -58,7 +57,6 @@ body,
 h2 {
   font-weight: bold;
   margin-bottom: 1.5em;
-  color: var(--c-white);
 }
 
 /* Antd */
@@ -73,8 +71,8 @@ h2 {
 }
 
 a {
-  color: var(--c-white);
-  text-shadow: 1px 1px 10px rgba(52, 21, 255, 0.6);
+  color: var(--c-dark);
+  //text-shadow: 1px 1px 10px rgba(52, 21, 255, 0.6);
 }
 
 a:hover,
@@ -83,15 +81,12 @@ a:focus {
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.33);
-  border: 1px solid var(--c-black);
+  background: rgba(255, 255, 255, 0.9);
   margin-top: var(--content-margin-block);
   backdrop-filter: blur(25px);
-  box-shadow:
-    0 0 5px 2px rgba(255, 255, 255, 0.5),
-    0 0 5px 4px rgba(255, 255, 255, 0.1);
   padding: 24px 16px;
-  border-radius: 2px;
+  border: solid 4px var(--c-dark);
+  border-radius: 8px;
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;
