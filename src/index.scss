@@ -74,7 +74,7 @@ a:focus {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.9);
+  background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgba(221, 187, 255, 0.8) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
   margin-top: var(--content-margin-block);
   padding: 24px 16px;
   border-radius: 4px;
@@ -89,6 +89,7 @@ a:focus {
     0 0 7.3px rgba(0, 0, 0, 0.111),
     0 0 11.3px rgba(0, 0, 0, 0.126),
     0 0 20px rgba(0, 0, 0, 0.16);
+  font-weight: 500;
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;

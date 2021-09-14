@@ -15,7 +15,19 @@
     margin: 0;
     font-weight: 700;
     padding: 24px 0;
-    animation: slide-animation var(--transition-duration) both;
+    animation: title-animation var(--transition-duration) both;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.6),
+      3px  1px 20px rgba(255, 255, 255, 0.6),
+      2px  2px 20px rgba(255, 255, 255, 0.6),
+      1px  3px 20px rgba(255, 255, 255, 0.6),
+      -4px  4px 20px rgba(255, 255, 255, 0.6),
+      -3px  5px 20px rgba(255, 255, 255, 0.6),
+      -2px -2px 20px rgba(116, 238, 255, 0.6),
+      -2px -2px 20px rgba(144, 249, 255, 0.63),
+      -2px -2px 20px rgba(89, 123, 255, 0.44),
+      -2px -2px 20px rgba(255, 255, 255, 0.6),
+      -1px -3px 20px rgba(255, 255, 255, 0.6);
 
     &::first-letter {
       color: red; // TODO
@@ -71,22 +83,9 @@
       0 0 15px rgba(0, 0, 0, 0.23),
       0 0 36px rgba(0, 0, 0, 0.32);
   }
-
-  &__icons {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 64px;
-    animation: slide-animation var(--transition-duration) ease;
-
-    svg {
-      font-size: 50px;
-      color: rgba(0, 0, 0, 0.1); // TODO
-    }
-  }
 }
 
-@keyframes slide-animation {
+@keyframes title-animation {
   from {
     opacity: 0;
     transform: translateY(25px);
@@ -102,10 +101,18 @@
   from {
     opacity: 0;
     transform: scale(0.9);
+    box-shadow: none;
   }
 
   to {
     opacity: 1;
     transform: scaleX(1);
+    box-shadow:
+      0 0 1px rgba(0, 0, 0, 0.09),
+      0 0 2.4px rgba(0, 0, 0, 0.129),
+      0 0 4.5px rgba(0, 0, 0, 0.16),
+      0 0 8px rgba(0, 0, 0, 0.191),
+      0 0 15px rgba(0, 0, 0, 0.23),
+      0 0 36px rgba(0, 0, 0, 0.32);
   }
 }
