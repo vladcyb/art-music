@@ -47,13 +47,6 @@ body,
   color: var(--c-white);
 }
 
-@media screen and (min-width: $breakpoint-md) {
-  body,
-  .ant-card {
-    //font-size: 16px;
-  }
-}
-
 h2 {
   font-weight: bold;
   margin-bottom: 1.5em;
@@ -71,13 +64,13 @@ h2 {
 }
 
 a {
-  color: var(--c-dark);
-  //text-shadow: 1px 1px 10px rgba(52, 21, 255, 0.6);
+  transition: all 400ms ease;
 }
 
 a:hover,
 a:focus {
-  color: var(--c-light-blue);
+  color: blue;
+  text-shadow: 1px 1px 7px rgba(0, 0, 255, 0.7);
 }
 
 .card {
@@ -85,7 +78,17 @@ a:focus {
   margin-top: var(--content-margin-block);
   padding: 24px 16px;
   border-radius: 4px;
-  box-shadow: 0 0 10px 1px rgb(0 0 0 / 60%);
+  box-shadow:
+    0 0 0.3px rgba(0, 0, 0, 0.034),
+    0 0 0.7px rgba(0, 0, 0, 0.051),
+    0 0 1.2px rgba(0, 0, 0, 0.063),
+    0 0 1.7px rgba(0, 0, 0, 0.073),
+    0 0 2.5px rgba(0, 0, 0, 0.082),
+    0 0 3.5px rgba(0, 0, 0, 0.091),
+    0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 7.3px rgba(0, 0, 0, 0.111),
+    0 0 11.3px rgba(0, 0, 0, 0.126),
+    0 0 20px rgba(0, 0, 0, 0.16);
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;
