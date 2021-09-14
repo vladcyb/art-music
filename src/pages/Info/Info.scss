@@ -9,7 +9,6 @@
 
   &__title {
     text-align: center;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
     font-family: 'Kaisei HarunoUmi', serif;
     font-size: 32px;
     line-height: 100%;
@@ -17,6 +16,7 @@
     font-weight: 700;
     padding: 24px 0;
     animation: slide-animation var(--transition-duration) both;
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 51%), 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white;
 
     &::first-letter {
       color: red; // TODO
@@ -64,6 +64,7 @@
     background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
     animation: wrapper-animation var(--transition-duration) ease;
     font-weight: 500;
+    box-shadow: 0 10px 10px 0 black;
   }
 
   &__icons {
@@ -84,11 +85,13 @@
   from {
     opacity: 0;
     transform: translateY(25px);
+    text-shadow: none;
   }
 
   to {
     opacity: 1;
     transform: translateY(0);
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 51%), 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white;
   }
 }
 
@@ -96,10 +99,12 @@
   from {
     opacity: 0;
     transform: scale(0.9);
+    box-shadow: none;
   }
 
   to {
     opacity: 1;
     transform: scaleX(1);
+    box-shadow: 0 10px 10px 0 black;
   }
 }
