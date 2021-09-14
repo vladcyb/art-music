@@ -64,6 +64,7 @@
     background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
     animation: wrapper-animation var(--transition-duration) ease;
     font-weight: 500;
+    box-shadow: 0 10px 10px 0 black;
   }
 
   &__icons {

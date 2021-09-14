@@ -83,10 +83,9 @@ a:focus {
 .card {
   background: rgba(255, 255, 255, 0.9);
   margin-top: var(--content-margin-block);
-  backdrop-filter: blur(25px);
   padding: 24px 16px;
-  border: solid 4px var(--c-dark);
-  border-radius: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 1px rgb(0 0 0 / 60%);
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;
