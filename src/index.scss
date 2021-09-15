@@ -3,7 +3,6 @@
 :root {
   /* variables */
   --header-height: 64px;
-  --content-margin-block: 20px;
   --content-margin-inline: 5px;
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
@@ -65,6 +64,7 @@ h2 {
 
 a {
   transition: all 400ms ease;
+  color: #1717e1;
 }
 
 a:hover,
@@ -77,22 +77,22 @@ a:focus {
   background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgba(221, 187, 255, 0.8) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
   margin-top: var(--content-margin-block);
   padding: 24px 16px;
-  border-radius: 4px;
-  box-shadow:
-    0 0 0.3px rgba(0, 0, 0, 0.034),
-    0 0 0.7px rgba(0, 0, 0, 0.051),
-    0 0 1.2px rgba(0, 0, 0, 0.063),
-    0 0 1.7px rgba(0, 0, 0, 0.073),
-    0 0 2.5px rgba(0, 0, 0, 0.082),
-    0 0 3.5px rgba(0, 0, 0, 0.091),
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 0 7.3px rgba(0, 0, 0, 0.111),
-    0 0 11.3px rgba(0, 0, 0, 0.126),
-    0 0 20px rgba(0, 0, 0, 0.16);
   font-weight: 500;
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;
+    border-radius: 4px;
+    box-shadow:
+      0 0 0.3px rgba(0, 0, 0, 0.034),
+      0 0 0.7px rgba(0, 0, 0, 0.051),
+      0 0 1.2px rgba(0, 0, 0, 0.063),
+      0 0 1.7px rgba(0, 0, 0, 0.073),
+      0 0 2.5px rgba(0, 0, 0, 0.082),
+      0 0 3.5px rgba(0, 0, 0, 0.091),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 0 7.3px rgba(0, 0, 0, 0.111),
+      0 0 11.3px rgba(0, 0, 0, 0.126),
+      0 0 20px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: $breakpoint-lg) {
