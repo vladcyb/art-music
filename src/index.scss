@@ -3,7 +3,7 @@
 :root {
   /* variables */
   --header-height: 64px;
-  --content-margin-inline: 5px;
+  --content-margin-inline: 10px;
   --content-margin-block: 16px;
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
@@ -79,7 +79,7 @@ a:active {
 }
 
 .card {
-  background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgba(221, 187, 255, 0.8) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
+  background: rgba(220, 227, 255, 0.85);
   margin-top: var(--content-margin-block);
   backdrop-filter: blur(25px);
   padding: 24px 16px;
@@ -104,8 +104,10 @@ a:active {
     padding: 48px;
   }
 
-  input {
+  input,
+  .ant-input-affix-wrapper {
     border: 1px solid #8c8dff;
+    font-weight: 500;
   }
 
   label {

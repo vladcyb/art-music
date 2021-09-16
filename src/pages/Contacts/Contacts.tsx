@@ -11,13 +11,13 @@ export const Contacts = () => (
             <span>Адрес:</span>
             {' '}
             <a href="https://yandex.ru/maps/-/CCUm6LwtdC">
-            г. Воронеж, ул. Машиностроителей, д. 82</a>
+            г. Воронеж, ул. Машиностроителей, д.&nbsp;82</a>
           </p>
           <p>
             <span>Телефон:</span>
             {' '}
-            <a href="tel:+79204022299">+7 920 402-22-99</a>,&nbsp;
-            <a href="tel:+79202170035">+7 920 217-00-35</a>
+            <a className="contacts__phone" href="tel:+79204022299">+7 920 402-22-99</a>,{' '}
+            <a className="contacts__phone" href="tel:+79202170035">+7 920 217-00-35</a>
           </p>
           <p>
             <span>Email:</span>

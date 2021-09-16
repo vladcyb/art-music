@@ -1,4 +1,5 @@
 import { Button, Col, Form, Input, Row } from 'antd';
+import MaskedInput from 'antd-mask-input';
 import './CallBack.scss';
 
 export const CallBack = () => {
@@ -19,7 +20,11 @@ export const CallBack = () => {
               <Input name="name" />
             </Form.Item>
             <Form.Item label="Телефон:">
-              <Input name="phone" />
+              <MaskedInput
+                mask="(111) 111-11-11"
+                name="phone"
+                prefix="+7"
+              />
             </Form.Item>
             <Form.Item label="Email:">
               <Input name="email" />
