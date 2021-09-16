@@ -5,6 +5,8 @@
   right: 0;
   top: 0;
   z-index: var(--z-index-navbar);
+  justify-content: space-between;
+  align-items: center;
 
   a {
     display: inline-block;
@@ -37,6 +39,14 @@
 
     &-active > .ant-anchor-link-title {
       color: var(--c-white);
+    }
+  }
+
+  &__theme-btn {
+    //opacity: 0.1;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

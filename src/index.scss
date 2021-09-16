@@ -3,8 +3,8 @@
 :root {
   /* variables */
   --header-height: 64px;
-  --content-margin-block: 20px;
   --content-margin-inline: 5px;
+  --content-margin-block: 16px;
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
 
@@ -39,8 +39,6 @@ body,
 .ant-card {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: var(--c-white-2);
-  text-shadow: 1px 1px 2px black;
 }
 
 *::selection {
@@ -48,17 +46,9 @@ body,
   color: var(--c-white);
 }
 
-@media screen and (min-width: $breakpoint-md) {
-  body,
-  .ant-card {
-    //font-size: 16px;
-  }
-}
-
 h2 {
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1.5em;
-  color: var(--c-white);
 }
 
 /* Antd */
@@ -73,28 +63,45 @@ h2 {
 }
 
 a {
-  color: var(--c-white);
-  text-shadow: 1px 1px 10px rgba(52, 21, 255, 0.6);
+  transition: all 400ms ease;
+  color: #67008a;
+  //text-shadow: 1px 1px 0px #000770;
 }
 
 a:hover,
 a:focus {
-  color: var(--c-light-blue);
+  color: #1717e1;
+  text-shadow: 1px 1px 2px #c518ff;
+}
+
+a:active {
+  color: red;
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.33);
-  border: 1px solid var(--c-black);
+  background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
   margin-top: var(--content-margin-block);
-  backdrop-filter: blur(25px);
-  box-shadow:
-    0 0 5px 2px rgba(255, 255, 255, 0.5),
-    0 0 5px 4px rgba(255, 255, 255, 0.1);
   padding: 24px 16px;
-  border-radius: 2px;
+  font-weight: 500;
+
+  input {
+    border: 1px solid var(--c-dark);
+  }
 
   @media screen and (min-width: $breakpoint-sm) {
     padding: 40px;
+    border-radius: 4px;
+    box-shadow:
+      0 0 0.3px rgba(0, 0, 0, 0.034),
+      0 0 0.7px rgba(0, 0, 0, 0.051),
+      0 0 1.2px rgba(0, 0, 0, 0.063),
+      0 0 1.7px rgba(0, 0, 0, 0.073),
+      0 0 2.5px rgba(0, 0, 0, 0.082),
+      0 0 3.5px rgba(0, 0, 0, 0.091),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 0 7.3px rgba(0, 0, 0, 0.111),
+      0 0 11.3px rgba(0, 0, 0, 0.126),
+      0 0 20px rgba(0, 0, 0, 0.16);
   }
 
   @media screen and (min-width: $breakpoint-lg) {
@@ -106,4 +113,23 @@ a:focus {
 #contacts,
 #about {
   scroll-margin-block: calc(var(--header-height) + 20px);
+}
+
+/* themes */
+.app.theme-dark {
+  .card {
+    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgba(221, 187, 255, 0.8) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
+    margin-top: var(--content-margin-block);
+    backdrop-filter: blur(25px);
+    padding: 24px 16px;
+    border-radius: 2px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+      padding: 40px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      padding: 48px;
+    }
+  }
 }

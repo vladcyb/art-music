@@ -9,7 +9,6 @@
 
   &__title {
     text-align: center;
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
     font-family: 'Kaisei HarunoUmi', serif;
     font-size: 32px;
     line-height: 100%;
@@ -17,6 +16,18 @@
     font-weight: 700;
     padding: 24px 0;
     animation: slide-animation var(--transition-duration) both;
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.6),
+      3px  1px 20px rgba(255, 255, 255, 0.6),
+      2px  2px 20px rgba(255, 255, 255, 0.6),
+      1px  3px 20px rgba(255, 255, 255, 0.6),
+      -4px  4px 20px rgba(255, 255, 255, 0.6),
+      -3px  5px 20px rgba(255, 255, 255, 0.6),
+      -2px -2px 20px rgba(116, 238, 255, 0.6),
+      -2px -2px 20px rgba(144, 249, 255, 0.63),
+      -2px -2px 20px rgba(89, 123, 255, 0.44),
+      -2px -2px 20px rgba(255, 255, 255, 0.6),
+      -1px -3px 20px rgba(255, 255, 255, 0.6);
 
     &::first-letter {
       color: red; // TODO
@@ -64,9 +75,17 @@
     background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
     animation: wrapper-animation var(--transition-duration) ease;
     font-weight: 500;
+    box-shadow:
+      0 0 1px rgba(0, 0, 0, 0.09),
+      0 0 2.4px rgba(0, 0, 0, 0.129),
+      0 0 4.5px rgba(0, 0, 0, 0.16),
+      0 0 8px rgba(0, 0, 0, 0.191),
+      0 0 15px rgba(0, 0, 0, 0.23),
+      0 0 36px rgba(0, 0, 0, 0.32);
   }
 
   &__icons {
+    visibility: hidden; // TODO
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -75,7 +94,7 @@
 
     svg {
       font-size: 50px;
-      color: rgba(0, 0, 0, 0.1); // TODO
+      color: rgba(82, 82, 82, 0.82); // TODO
     }
   }
 }
@@ -101,5 +120,30 @@
   to {
     opacity: 1;
     transform: scaleX(1);
+    box-shadow:
+      0 0 1px rgba(0, 0, 0, 0.09),
+      0 0 2.4px rgba(0, 0, 0, 0.129),
+      0 0 4.5px rgba(0, 0, 0, 0.16),
+      0 0 8px rgba(0, 0, 0, 0.191),
+      0 0 15px rgba(0, 0, 0, 0.23),
+      0 0 36px rgba(0, 0, 0, 0.32);
+  }
+}
+
+/* themes */
+.theme-dark {
+  .info {
+    &__title {
+      text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &__icons {
+      svg {
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.1); // TODO
+      }
+
+      visibility: visible; // TODO
+    }
   }
 }

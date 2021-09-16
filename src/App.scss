@@ -12,11 +12,13 @@
     left: 0;
     right: 0;
     z-index: -1; /* needed to keep in the background */
-    background: url(./assets/i/bg.webp) center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(./assets/i/bg8.png) center center / cover;
+  }
+
+  &.theme-dark {
+    &::after {
+      background: url(./assets/i/bg.webp) center center / cover;
+    }
   }
 
   .app__content {
