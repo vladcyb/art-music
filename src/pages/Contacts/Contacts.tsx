@@ -8,19 +8,19 @@ export const Contacts = () => (
         <h2>Контакты</h2>
         <div className="contacts__content">
           <p>
-            Адрес:
+            <span>Адрес:</span>
             {' '}
             <a href="https://yandex.ru/maps/-/CCUm6LwtdC">
             г. Воронеж, ул. Машиностроителей, д. 82</a>
           </p>
           <p>
-            Телефон:
+            <span>Телефон:</span>
             {' '}
             <a href="tel:+79204022299">+7 920 402-22-99</a>,&nbsp;
             <a href="tel:+79202170035">+7 920 217-00-35</a>
           </p>
           <p>
-            Email:
+            <span>Email:</span>
             {' '}
             <a href="mailto:vmb36@yandex.ru">vmb36@yandex.ru</a>
           </p>

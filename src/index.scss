@@ -38,7 +38,7 @@
 body,
 .ant-card {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 *::selection {
@@ -65,7 +65,6 @@ h2 {
 a {
   transition: all 400ms ease;
   color: #67008a;
-  //text-shadow: 1px 1px 0px #000770;
 }
 
 a:hover,
@@ -76,6 +75,7 @@ a:focus {
 
 a:active {
   color: red;
+  transition: all 0s;
 }
 
 .card {
@@ -83,7 +83,7 @@ a:active {
   margin-top: var(--content-margin-block);
   backdrop-filter: blur(25px);
   padding: 24px 16px;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow:
     0 0 0.3px  rgba(0, 0, 0, 0.034),
     0 0 0.7px  rgba(0, 0, 0, 0.051),
@@ -109,7 +109,8 @@ a:active {
   }
 
   label {
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--c-dark);
   }
 }
 
