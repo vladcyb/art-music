@@ -16,21 +16,10 @@
     font-weight: 700;
     padding: 24px 0;
     animation: slide-animation var(--transition-duration) both;
-    text-shadow:
-      0 0 10px rgba(255, 255, 255, 0.6),
-      3px  1px 20px rgba(255, 255, 255, 0.6),
-      2px  2px 20px rgba(255, 255, 255, 0.6),
-      1px  3px 20px rgba(255, 255, 255, 0.6),
-      -4px  4px 20px rgba(255, 255, 255, 0.6),
-      -3px  5px 20px rgba(255, 255, 255, 0.6),
-      -2px -2px 20px rgba(116, 238, 255, 0.6),
-      -2px -2px 20px rgba(144, 249, 255, 0.63),
-      -2px -2px 20px rgba(89, 123, 255, 0.44),
-      -2px -2px 20px rgba(255, 255, 255, 0.6),
-      -1px -3px 20px rgba(255, 255, 255, 0.6);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
 
     &::first-letter {
-      color: red; // TODO
+      color: red;
     }
 
     @media screen and (min-width: $breakpoint-md) {
@@ -85,7 +74,6 @@
   }
 
   &__icons {
-    visibility: hidden; // TODO
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -94,7 +82,7 @@
 
     svg {
       font-size: 50px;
-      color: rgba(82, 82, 82, 0.82); // TODO
+      color: rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -127,23 +115,5 @@
       0 0 8px rgba(0, 0, 0, 0.191),
       0 0 15px rgba(0, 0, 0, 0.23),
       0 0 36px rgba(0, 0, 0, 0.32);
-  }
-}
-
-/* themes */
-.theme-dark {
-  .info {
-    &__title {
-      text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    &__icons {
-      svg {
-        font-size: 50px;
-        color: rgba(0, 0, 0, 0.1); // TODO
-      }
-
-      visibility: visible; // TODO
-    }
   }
 }

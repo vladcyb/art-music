@@ -1,4 +1,4 @@
-import { Anchor, Button, Layout } from 'antd';
+import { Anchor, Layout } from 'antd';
 import './navbar.scss';
 
 const { Header } = Layout;
@@ -24,20 +24,13 @@ const links: LinkType[] = [
   },
 ];
 
-interface INavbarProps {
-  switchTheme: () => void;
-}
 
-
-export const Navbar = ({ switchTheme }: INavbarProps) => (
+export const Navbar = () => (
   <Header className="navbar">
     <Anchor bounds={200} targetOffset={84}>
       {links.map((link) => (
         <Link href={link.key} title={link.name} key={link.key} />
       ))}
     </Anchor>
-    <Button className="navbar__theme-btn" type="default" onClick={switchTheme}>
-      Switch theme
-    </Button>
   </Header>
 );
