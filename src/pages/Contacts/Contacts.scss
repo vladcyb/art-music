@@ -9,6 +9,31 @@
     white-space: nowrap;
   }
 
+  p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__value {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+    *:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    p {
+      flex-direction: row;
+    }
+  }
+
   @media screen and (min-width: $breakpoint-lg) {
     .card {
       max-width: 550px;
