@@ -1,8 +1,11 @@
 import { Anchor, Layout } from 'antd';
+import classNames from 'classnames';
+import { useEffect, useRef, useState } from 'react';
 import './navbar.scss';
 
 const { Header } = Layout;
 const { Link } = Anchor;
+
 
 type LinkType = {
   name: string,
@@ -24,13 +27,36 @@ const links: LinkType[] = [
   },
 ];
 
+export const Navbar = () => {
+  const [down, setDown] = useState(false);
+  const prevScrollY = useRef(window.scrollY);
 
-export const Navbar = () => (
-  <Header className="navbar">
-    <Anchor bounds={200} targetOffset={84}>
-      {links.map((link) => (
-        <Link href={link.key} title={link.name} key={link.key} />
-      ))}
-    </Anchor>
-  </Header>
-);
+  const handleScroll = () => {
+    prevScrollY.current = window.scrollY;
+  };
+
+  const handlePageScroll = () => {
+    setDown(window.scrollY > prevScrollY.current);
+    handleScroll();
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handlePageScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handlePageScroll);
+    };
+  }, []);
+
+  return (
+    <Header className={classNames('navbar', {
+      navbar_hidden: down,
+    })}>
+      <Anchor bounds={200} targetOffset={84}>
+        {links.map((link) => (
+          <Link href={link.key} title={link.name} key={link.key} />
+        ))}
+      </Anchor>
+    </Header>
+  );
+};
