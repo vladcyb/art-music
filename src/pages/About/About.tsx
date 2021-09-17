@@ -1,9 +1,10 @@
 import { Col, Row } from 'antd';
+import { MyCard } from '../../components/MyCard';
 
 export const About = () => (
   <Row className="about" justify="center">
     <Col xs={24} sm={24}>
-      <div className="card" id="about">
+      <MyCard id="about">
         <h2>О нас</h2>
         <p>
           {/* eslint-disable-next-line max-len */}
@@ -17,7 +18,7 @@ export const About = () => (
           {/* eslint-disable-next-line max-len */}
           В своём стремлении улучшить пользовательский опыт мы упускаем, что стремящиеся вытеснить традиционное производство, нанотехнологии, превозмогая сложившуюся непростую экономическую ситуацию, указаны как претенденты на роль ключевых факторов. Идейные соображения высшего порядка, а также граница обучения кадров однозначно фиксирует необходимость экспериментов, поражающих по своей масштабности и грандиозности.
         </p>
-      </div>
+      </MyCard>
     </Col>
   </Row>
 );

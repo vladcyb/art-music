@@ -4,7 +4,7 @@ import { useScrollPosition } from './useScrollPosition';
 
 export const useScrollDirection = (): boolean => {
   const prevPosition = useRef(0);
-  const position = useScrollPosition();
+  const position = useScrollPosition(100);
   const [isDownScroll, setIsDownScroll] = useState(false);
 
   useEffect(() => {

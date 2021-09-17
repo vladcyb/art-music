@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const useScrollPosition = (): number => {
+export const useScrollPosition = (interval: number): number => {
   const timeout = useRef<any>(null);
   const [position, setPosition] = useState(window.scrollY);
 
@@ -15,7 +15,7 @@ export const useScrollPosition = (): number => {
     timeout.current = setTimeout(() => {
       handleScroll();
       timeout.current = null;
-    }, 100);
+    }, interval);
   };
 
   useEffect(() => {

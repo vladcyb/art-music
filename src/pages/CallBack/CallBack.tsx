@@ -1,5 +1,6 @@
 import { Button, Col, Form, Input, Row } from 'antd';
 import MaskedInput from 'antd-mask-input';
+import { MyCard } from '../../components/MyCard';
 import './CallBack.scss';
 
 export const CallBack = () => {
@@ -10,7 +11,7 @@ export const CallBack = () => {
   return (
     <Row justify="center">
       <Col xs={24} md={16} lg={16} xl={12} xxl={8}>
-        <div className="card callback">
+        <MyCard className="callback">
           <h2>Заказать бесплатный&nbsp;звонок</h2>
           <Form
             layout="vertical"
@@ -35,7 +36,7 @@ export const CallBack = () => {
               </Button>
             </Form.Item>
           </Form>
-        </div>
+        </MyCard>
       </Col>
     </Row>
   );

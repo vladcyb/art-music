@@ -1,9 +1,10 @@
 import { Col, Row } from 'antd';
+import { MyCard } from '../../components/MyCard';
 
 export const Payment = () => (
   <Row className="payment" justify="center">
     <Col sm={24}>
-      <div className="card payment__card">
+      <MyCard className="payment__card">
         <h2>Оплата и доставка</h2>
         <p>
           Мы доставляем заказы по всей России следующими транспортными компаниями:
@@ -37,7 +38,7 @@ export const Payment = () => (
             в том числе при покупке свыше 5000 рублей.
           </li>
         </ul>
-      </div>
+      </MyCard>
     </Col>
   </Row>
 );

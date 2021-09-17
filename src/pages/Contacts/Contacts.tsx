@@ -1,10 +1,11 @@
 import { Col, Row } from 'antd';
+import { MyCard } from '../../components/MyCard';
 import './Contacts.scss';
 
 export const Contacts = () => (
   <Row>
     <Col className="contacts" xs={24} xl={14}>
-      <div className="card" id="contacts">
+      <MyCard id="contacts">
         <h2>Контакты</h2>
         <p>
           <span>Адрес:</span>
@@ -23,7 +24,7 @@ export const Contacts = () => (
           <span>Email:</span>
           <a className="contacts__value" href="mailto:vmb36@yandex.ru">vmb36@yandex.ru</a>
         </p>
-      </div>
+      </MyCard>
     </Col>
   </Row>
 );

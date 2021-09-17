@@ -1,10 +1,11 @@
 import { Col, Row } from 'antd';
+import { MyCard } from '../../components/MyCard';
 import './Brands.scss';
 
 export const Brands = () => (
   <Row className="brands" justify="center" id="brands">
     <Col xs={24}>
-      <div className="card">
+      <MyCard>
         <h2>Наши бренды</h2>
         <ul>
           <li>Yamaha</li>
@@ -13,7 +14,7 @@ export const Brands = () => (
           <li>Fender</li>
           <li>XLine</li>
         </ul>
-      </div>
+      </MyCard>
     </Col>
   </Row>
 );
