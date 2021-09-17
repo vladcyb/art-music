@@ -30,14 +30,22 @@ const links: LinkType[] = [
 export const Navbar = () => {
   const [down, setDown] = useState(false);
   const prevScrollY = useRef(window.scrollY);
+  const timeout = useRef<any>(null);
 
   const handleScroll = () => {
     prevScrollY.current = window.scrollY;
   };
+  console.log('render');
 
   const handlePageScroll = () => {
-    setDown(window.scrollY > prevScrollY.current);
-    handleScroll();
+    if (timeout.current !== null) {
+      return;
+    }
+    timeout.current = setTimeout(() => {
+      setDown(window.scrollY > prevScrollY.current);
+      handleScroll();
+      timeout.current = null;
+    }, 0);
   };
 
   useEffect(() => {
