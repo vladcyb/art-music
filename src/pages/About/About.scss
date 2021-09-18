@@ -1,0 +1,21 @@
+.about {
+  .card {
+    &_hidden {
+      opacity: 0;
+    }
+
+    &_visible {
+      animation: about-animation 0.4s ease;
+    }
+  }
+}
+
+@keyframes about-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -9,9 +9,9 @@ export const CallBack = () => {
   };
 
   return (
-    <Row justify="center">
+    <Row className="callback" justify="center">
       <Col xs={24} md={16} lg={16} xl={12} xxl={8}>
-        <MyCard className="callback">
+        <MyCard bound={100}>
           <h2>Заказать бесплатный&nbsp;звонок</h2>
           <Form
             layout="vertical"

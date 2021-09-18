@@ -1,10 +1,12 @@
 import { Col, Row } from 'antd';
 import { MyCard } from '../../components/MyCard';
+import './About.scss';
+
 
 export const About = () => (
   <Row className="about" justify="center">
     <Col xs={24} sm={24}>
-      <MyCard id="about">
+      <MyCard id="about" bound={100}>
         <h2>О нас</h2>
         <p>
           {/* eslint-disable-next-line max-len */}

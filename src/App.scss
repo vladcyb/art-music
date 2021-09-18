@@ -3,6 +3,7 @@
 .ant-layout.app {
   padding: calc(var(--header-height)) 0 250px 0;
   background: transparent;
+  overflow-x: hidden;
 
   &::after {
     content: "";

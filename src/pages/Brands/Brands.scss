@@ -3,6 +3,15 @@
 .brands {
   .card {
     margin-top: 0;
+
+    &_hidden {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    &_visible {
+      animation: brands-animation 0.4s ease;
+    }
   }
 
   h2 {
@@ -21,5 +30,17 @@
         font-size: 2em;
       }
     }
+  }
+}
+
+@keyframes brands-animation {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
