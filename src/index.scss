@@ -78,44 +78,6 @@ a:active {
   transition: all 0s;
 }
 
-.card {
-  background: rgba(220, 227, 255, 0.85);
-  margin-top: var(--content-margin-block);
-  backdrop-filter: blur(25px);
-  padding: 24px 16px;
-  border-radius: 4px;
-  box-shadow:
-    0 0 0.3px  rgba(0, 0, 0, 0.034),
-    0 0 0.7px  rgba(0, 0, 0, 0.051),
-    0 0 1.2px  rgba(0, 0, 0, 0.063),
-    0 0 1.7px  rgba(0, 0, 0, 0.073),
-    0 0 2.5px  rgba(0, 0, 0, 0.082),
-    0 0 3.5px  rgba(0, 0, 0, 0.091),
-    0 0 5px    rgba(0, 0, 0, 0.1),
-    0 0 7.3px  rgba(0, 0, 0, 0.111),
-    0 0 11.3px rgba(0, 0, 0, 0.126),
-    0 0 20px   rgba(0, 0, 0, 0.16);
-
-  @media screen and (min-width: $breakpoint-sm) {
-    padding: 40px;
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
-    padding: 48px;
-  }
-
-  input,
-  .ant-input-affix-wrapper {
-    border: 1px solid #8c8dff;
-    font-weight: 500;
-  }
-
-  label {
-    font-weight: 600;
-    color: var(--c-dark);
-  }
-}
-
 #brands,
 #contacts,
 #about {
