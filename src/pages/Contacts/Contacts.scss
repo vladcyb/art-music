@@ -40,14 +40,18 @@
     }
   }
 
-  .card {
-    &_hidden {
-      opacity: 0;
-      transform: translateX(-200px);
+  .viewport-container {
+    &_invisible {
+      .card {
+        opacity: 0;
+        transform: translateX(-200px);
+      }
     }
 
     &_visible {
-      animation: contacts-animation 0.4s ease;
+      .card {
+        animation: contacts-animation 0.4s ease;
+      }
     }
   }
 }

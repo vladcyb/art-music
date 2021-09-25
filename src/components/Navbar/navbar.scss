@@ -9,10 +9,6 @@
   align-items: center;
   transition: transform 200ms;
 
-  &_hidden {
-    transform: translateY(-100%);
-  }
-
   a {
     display: inline-block;
   }

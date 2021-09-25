@@ -3,10 +3,12 @@
     text-align: center;
   }
 
-  .card {
-    &_hidden {
-      opacity: 0;
-      transform: translateX(-200px);
+  .viewport-container {
+    &_invisible {
+      .card {
+        opacity: 0;
+        transform: translateX(-200px);
+      }
     }
 
     &_visible {
