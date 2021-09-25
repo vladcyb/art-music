@@ -3,14 +3,20 @@
 .brands {
   .card {
     margin-top: 0;
+  }
 
-    &_hidden {
-      transform: translateY(100px);
-      opacity: 0;
+  .viewport-container {
+    &_invisible {
+      .card {
+        transform: translateY(25px);
+        opacity: 0;
+      }
     }
 
     &_visible {
-      animation: brands-animation 0.4s ease;
+      .card {
+        animation: brands-animation 0.4s ease;
+      }
     }
   }
 
@@ -35,7 +41,7 @@
 
 @keyframes brands-animation {
   0% {
-    transform: translateY(100px);
+    transform: translateY(25px);
     opacity: 0;
   }
 
