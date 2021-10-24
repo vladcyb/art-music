@@ -6,11 +6,11 @@
   }
 
   .viewport-container {
+    will-change: opacity, transform;
+
     &_invisible {
-      .card {
-        opacity: 0;
-        transform: translateX(-100px);
-      }
+      opacity: 0;
+      transform: translateX(-50px);
     }
 
     &_visible {

@@ -5,6 +5,8 @@
   background: var(--c-light-blue-2);
 
   .viewport-container {
+    will-change: opacity, transform;
+
     &_invisible {
       opacity: 0;
       transform: translateX(100px);

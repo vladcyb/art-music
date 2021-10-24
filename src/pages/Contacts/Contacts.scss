@@ -15,6 +15,7 @@
     0 0 7.3px  inset  rgba(0, 0, 0, 0.111),
     0 0 11.3px inset  rgba(0, 0, 0, 0.126),
     0 0 20px   inset  rgba(0, 0, 0, 0.16);
+  will-change: transform;
 
   &_highlighted {
     animation: highlighted-animation 1000ms ease;
