@@ -1,8 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { About, Brands, CallBack, Contacts, Info } from './pages';
+import { Rent, Brands, CallBack, Contacts, Info, Payment } from './pages';
 import { Navbar } from './components';
-import { Payment } from './pages';
 import { Content } from 'antd/es/layout/layout';
 import './App.scss';
 
@@ -12,7 +11,7 @@ export const App = () => (
     <Content className="app__content">
       <Info />
       <Brands />
-      <About />
+      <Rent />
       <CallBack />
       <Payment />
       <Contacts />

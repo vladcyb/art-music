@@ -1,20 +1,21 @@
 import { Col, Row } from 'antd';
 import { standardGutter } from '../../shared/constants/gutter';
-import './About.scss';
+import './Rent.scss';
 
 
-export const About = () => (
+export const Rent = () => (
   <Row
-    className="about"
+    className="rent"
     id="rent"
     justify="center"
     align="middle"
     gutter={{ ...standardGutter }}
   >
-    <Col className="about__img" xs={9}>
-      <img className="about__img" src="/i/noGKu5ogN9Q.jpg" alt="" />
+    <Col className="rent__img" xs={9}>
+      <img className="rent__img" src="/i/noGKu5ogN9Q.jpg" alt="" />
     </Col>
-    <Col xs={15}>
+    <Col xs={1} />
+    <Col xs={14}>
       <h2>Аренда и сборка сцены</h2>
       <p>
         Наша компания предоставляет полный спектр сценического оборудования:

@@ -50,11 +50,6 @@ body,
   font-size: 16px;
 }
 
-*::selection {
-  background: rgba(0, 0, 0, 0.58);
-  color: var(--c-white);
-}
-
 h2 {
   font-weight: 700;
   margin-bottom: 1.5em;
