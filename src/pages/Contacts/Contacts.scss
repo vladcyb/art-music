@@ -1,6 +1,24 @@
 @use '../../assets/scss/vars' as *;
 
 .contacts {
+  padding: 32px var(--content-margin-inline);
+  background: var(--c-blue);
+  box-shadow:
+    0 0 0.3px inset rgba(0, 0, 0, 0.034),
+    0 0 0.7px  inset  rgba(0, 0, 0, 0.051),
+    0 0 1.2px  inset  rgba(0, 0, 0, 0.063),
+    0 0 1.7px  inset  rgba(0, 0, 0, 0.073),
+    0 0 2.5px  inset  rgba(0, 0, 0, 0.082),
+    0 0 3.5px  inset  rgba(0, 0, 0, 0.091),
+    0 0 5px    inset  rgba(0, 0, 0, 0.1),
+    0 0 7.3px  inset  rgba(0, 0, 0, 0.111),
+    0 0 11.3px inset  rgba(0, 0, 0, 0.126),
+    0 0 20px   inset  rgba(0, 0, 0, 0.16);
+
+  h3 {
+    text-align: center;
+  }
+
   a {
     font-weight: 600;
   }
@@ -12,6 +30,8 @@
   p {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0;
   }
 
   &__value {

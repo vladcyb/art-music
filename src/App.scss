@@ -1,7 +1,7 @@
 @use './assets/scss/vars' as *;
 
 .ant-layout.app {
-  padding: calc(var(--header-height)) 0 250px 0;
+  padding: calc(var(--header-height)) 0 0 0;
   background: transparent;
   overflow-x: hidden;
 
@@ -13,10 +13,5 @@
     left: 0;
     right: 0;
     z-index: -1;
-    background: url(./assets/i/bg.webp) center center / cover;
-  }
-
-  .app__content {
-    margin: 0 var(--content-margin-inline);
   }
 }

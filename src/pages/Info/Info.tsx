@@ -1,40 +1,15 @@
-import { BsSpeaker, GiDrum, GiGuitarHead, GiPianoKeys, GiViolin } from 'react-icons/all';
 import { Col, Row } from 'antd';
-import { Fragment } from 'react';
 import { standardGutter } from '../../shared/constants/gutter';
 import './Info.scss';
-
-const musicIcons = [
-  {
-    id: 1,
-    component: <GiPianoKeys />,
-  },
-  {
-    id: 2,
-    component: <BsSpeaker />,
-  },
-  {
-    id: 3,
-    component: <GiGuitarHead />,
-  },
-  {
-    id: 4,
-    component: <GiDrum />,
-  },
-  {
-    id: 5,
-    component: <GiViolin />,
-  },
-];
 
 
 export const Info = () => (
   <section className="info">
     <div className="info__wrapper">
-      <h1 className="info__title">
-        Art-Music
-      </h1>
       <div className="info__content-wrapper">
+        <h1 className="info__title">
+          Art-Music
+        </h1>
         <Row className="info__content"
           wrap
           gutter={{ ...standardGutter }}
@@ -54,7 +29,7 @@ export const Info = () => (
               <b>Das&nbsp;Audio</b>,{' '}
               <b>Turbosound</b>,{' '}
               <b>Fender</b>,{' '}
-              <b>Line</b>{' '}
+              <b>XLine</b>{' '}
               и другие.
             </p>
             <p>
@@ -65,16 +40,5 @@ export const Info = () => (
         </Row>
       </div>
     </div>
-    <Row justify="center">
-      <Col xs={24}>
-        <div className="info__icons">
-          {musicIcons.map((item) => (
-            <Fragment key={item.id}>
-              {item.component}
-            </Fragment>
-          ))}
-        </div>
-      </Col>
-    </Row>
   </section>
 );

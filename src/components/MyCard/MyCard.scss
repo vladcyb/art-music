@@ -1,11 +1,10 @@
 @use '../../assets/scss/vars' as *;
 
 .card {
-  background: rgba(220, 227, 255, 0.85);
-  margin-top: var(--content-margin-block);
   backdrop-filter: blur(25px);
   padding: 24px 16px;
   border-radius: 4px;
+  background: var(--c-light-blue-2);
   box-shadow:
     0 0 0.3px  rgba(0, 0, 0, 0.034),
     0 0 0.7px  rgba(0, 0, 0, 0.051),

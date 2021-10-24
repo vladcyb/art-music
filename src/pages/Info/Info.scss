@@ -3,20 +3,20 @@
 .info {
   --transition-duration: 0.4s;
 
-  min-height: 100vh;
-  font-size: 16px;
+  font-size: 22px;
   text-shadow: none;
 
   &__title {
     text-align: center;
     font-family: 'Kaisei HarunoUmi', serif;
     font-size: 32px;
+    position: relative;
     line-height: 100%;
     margin: 0;
     font-weight: 700;
     padding: 24px 0;
-    animation: slide-animation var(--transition-duration) both;
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+    color: white;
 
     &::first-letter {
       color: red;
@@ -38,12 +38,11 @@
 
   &__wrapper {
     position: relative;
-    margin: 0 calc(-1 * var(--content-margin-inline));
   }
 
   &__content {
     line-height: 24px;
-    padding: 24px 0;
+    padding: 24px 0 48px 0;
 
     p:last-child {
       margin: 0;
@@ -60,9 +59,7 @@
   }
 
   &__content-wrapper {
-    color: var(--c-dark-2);
-    background: radial-gradient(92.16% 1413.86% at 34.82% 30%, rgb(221, 187, 255) 0%, #d4dbff 60.73%, #acb2d2 99.27%);
-    animation: wrapper-animation var(--transition-duration) ease;
+    color: white;
     font-weight: 500;
     box-shadow:
       0 0 1px rgba(0, 0, 0, 0.09),
@@ -71,18 +68,19 @@
       0 0 8px rgba(0, 0, 0, 0.191),
       0 0 15px rgba(0, 0, 0, 0.23),
       0 0 36px rgba(0, 0, 0, 0.32);
-  }
 
-  &__icons {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 64px;
-    animation: slide-animation var(--transition-duration) ease;
-
-    svg {
-      font-size: 50px;
-      color: rgba(0, 0, 0, 0.1);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(../../assets/i/ny8rSuCji5E.jpg);
+      background-position: center 35%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(0.4);
     }
   }
 }
@@ -96,24 +94,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes wrapper-animation {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleX(1);
-    box-shadow:
-      0 0 1px rgba(0, 0, 0, 0.09),
-      0 0 2.4px rgba(0, 0, 0, 0.129),
-      0 0 4.5px rgba(0, 0, 0, 0.16),
-      0 0 8px rgba(0, 0, 0, 0.191),
-      0 0 15px rgba(0, 0, 0, 0.23),
-      0 0 36px rgba(0, 0, 0, 0.32);
   }
 }

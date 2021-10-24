@@ -1,6 +1,8 @@
 @use "../../assets/scss/vars" as *;
 
 .brands {
+  padding: 64px 0;
+
   .card {
     margin-top: 0;
   }
@@ -27,14 +29,6 @@
   ul {
     li {
       font-weight: 600;
-      font-size: 1.5em;
-      position: relative;
-      color: rgb(63, 0, 121);
-      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
-
-      @media screen and (min-width: $breakpoint-lg) {
-        font-size: 2em;
-      }
     }
   }
 }
