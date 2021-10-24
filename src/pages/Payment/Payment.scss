@@ -1,29 +1,4 @@
 .payment {
   padding: 54px var(--content-margin-inline);
   background: var(--c-light-blue-2);
-
-  .viewport-container {
-    &_invisible {
-      .card {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-    }
-
-    &_visible {
-      animation: payment-animation 0.4s ease;
-    }
-  }
-}
-
-@keyframes payment-animation {
-  from {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }

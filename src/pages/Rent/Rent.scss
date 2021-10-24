@@ -1,3 +1,5 @@
+@use "../../assets/scss/mixins/box-shadow" as *;
+
 .rent {
   padding: 64px var(--content-margin-inline);
   background: var(--c-light-blue-2);
@@ -5,10 +7,11 @@
   .viewport-container {
     &_invisible {
       opacity: 0;
+      transform: translateX(100px);
     }
 
     &_visible {
-      animation: about-animation 0.4s ease;
+      animation: rent-animation var(--animation-duration) ease;
     }
   }
 
@@ -19,29 +22,19 @@
     align-items: stretch;
 
     img {
-      box-shadow:
-        0 0 0.3px  rgba(0, 0, 0, 0.034),
-        0 0 0.7px  rgba(0, 0, 0, 0.051),
-        0 0 1.2px  rgba(0, 0, 0, 0.063),
-        0 0 1.7px  rgba(0, 0, 0, 0.073),
-        0 0 2.5px  rgba(0, 0, 0, 0.082),
-        0 0 3.5px  rgba(0, 0, 0, 0.091),
-        0 0 5px    rgba(0, 0, 0, 0.1),
-        0 0 7.3px  rgba(0, 0, 0, 0.111),
-        0 0 11.3px rgba(0, 0, 0, 0.126),
-        0 0 20px   rgba(0, 0, 0, 0.16);
+      @include box-shadow();
     }
   }
 }
 
-@keyframes about-animation {
-  0% {
-    transform: translateY(25px);
+@keyframes rent-animation {
+  from {
     opacity: 0;
+    transform: translateX(100px);
   }
 
-  100% {
-    transform: translateY(0);
+  to {
     opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -14,7 +14,9 @@ export const App = () => (
       <Rent />
       <CallBack />
       <Payment />
-      <Contacts />
+      <div style={{ perspective: '800px', overflow: 'hidden' }}>
+        <Contacts />
+      </div>
     </Content>
   </Layout>
 );

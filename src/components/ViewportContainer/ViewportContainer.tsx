@@ -1,7 +1,14 @@
 import { PropsWithChildren, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
-export const ViewportContainer = ({ children }: PropsWithChildren<{}>) => {
+interface IViewportContainerProps {
+  className?: string;
+}
+
+export const ViewportContainer = ({
+  children,
+  className,
+}: PropsWithChildren<IViewportContainerProps>) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
@@ -36,6 +43,7 @@ export const ViewportContainer = ({ children }: PropsWithChildren<{}>) => {
     <div className={classNames(
       'viewport-container',
       isVisible ? 'viewport-container_visible' : 'viewport-container_invisible',
+      className,
     )}
     ref={ref}
     >

@@ -7,21 +7,6 @@
     margin-top: 0;
   }
 
-  .viewport-container {
-    &_invisible {
-      .card {
-        transform: translateY(25px);
-        opacity: 0;
-      }
-    }
-
-    &_visible {
-      .card {
-        animation: brands-animation 0.4s ease;
-      }
-    }
-  }
-
   h2 {
     text-align: center;
   }
@@ -30,17 +15,5 @@
     li {
       font-weight: 600;
     }
-  }
-}
-
-@keyframes brands-animation {
-  0% {
-    transform: translateY(25px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }

@@ -7,6 +7,7 @@
   --content-margin-block: 16px;
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
+  --animation-duration: 400ms;
 
   @media screen and (min-width: $breakpoint-sm) {
     --content-margin-inline: 24px;
@@ -66,20 +67,13 @@ h2 {
   margin-left: 0 !important;
 }
 
-a {
-  transition: all 400ms ease;
-  color: #67008a;
-}
-
 a:hover,
 a:focus {
   color: #1717e1;
-  text-shadow: 1px 1px 2px #c518ff;
 }
 
 a:active {
-  color: red;
-  transition: all 0s;
+  color: #080881;
 }
 
 #brands,

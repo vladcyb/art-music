@@ -3,6 +3,7 @@
 .contacts {
   padding: 32px var(--content-margin-inline);
   background: var(--c-blue);
+  overflow: hidden;
   box-shadow:
     0 0 0.3px inset rgba(0, 0, 0, 0.034),
     0 0 0.7px  inset  rgba(0, 0, 0, 0.051),
@@ -15,8 +16,14 @@
     0 0 11.3px inset  rgba(0, 0, 0, 0.126),
     0 0 20px   inset  rgba(0, 0, 0, 0.16);
 
+  &_highlighted {
+    animation: highlighted-animation 1000ms ease;
+    transform-origin: top;
+  }
+
   h3 {
     text-align: center;
+    font-weight: 600;
   }
 
   a {
@@ -53,37 +60,30 @@
       flex-direction: row;
     }
   }
-
-  @media screen and (min-width: $breakpoint-lg) {
-    .card {
-      max-width: 550px;
-    }
-  }
-
-  .viewport-container {
-    &_invisible {
-      .card {
-        opacity: 0;
-        transform: translateX(-200px);
-      }
-    }
-
-    &_visible {
-      .card {
-        animation: contacts-animation 0.4s ease;
-      }
-    }
-  }
 }
 
-@keyframes contacts-animation {
-  from {
-    opacity: 0;
-    transform: translateX(-200px);
+@keyframes highlighted-animation {
+  0% {
+    transform: rotateX(0deg);
   }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  20% {
+    transform: rotateX(-20deg);
+  }
+
+  40% {
+    transform: rotateX(10deg);
+  }
+
+  60% {
+    transform: rotateX(-5deg);
+  }
+
+  80% {
+    transform: rotateX(3deg);
+  }
+
+  100% {
+    transform: rotateX(0);
   }
 }
