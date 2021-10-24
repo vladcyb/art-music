@@ -1,8 +1,13 @@
 import { Col, Row } from 'antd';
+import { standardGutter } from '../../shared/constants/gutter';
 import './Payment.scss';
 
 export const Payment = () => (
-  <Row className="payment" justify="center">
+  <Row
+    className="payment"
+    justify="center"
+    gutter={{ ...standardGutter }}
+  >
     <Col sm={24}>
       <h2>Оплата и доставка</h2>
       <p>

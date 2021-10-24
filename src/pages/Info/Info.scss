@@ -8,41 +8,28 @@
 
   &__title {
     text-align: center;
-    font-family: 'Kaisei HarunoUmi', serif;
-    font-size: 32px;
+    font-family: 'Dancing Script', serif;
+    font-size: 48px;
     position: relative;
     line-height: 100%;
     margin: 0;
     font-weight: 700;
-    padding: 24px 0;
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
     color: white;
+    padding-bottom: 16px;
 
     &::first-letter {
       color: red;
-    }
-
-    @media screen and (min-width: $breakpoint-md) {
-      font-size: 40px;
-      padding: 48px 0;
-    }
-
-    @media screen and (min-width: $breakpoint-lg) {
-      font-size: 48px;
-    }
-
-    @media screen and (min-width: $breakpoint-xl) {
-      font-size: 54px;
     }
   }
 
   &__wrapper {
     position: relative;
+    padding: 48px 0;
   }
 
   &__content {
     line-height: 24px;
-    padding: 24px 0 48px 0;
 
     p:last-child {
       margin: 0;

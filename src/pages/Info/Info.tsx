@@ -1,5 +1,6 @@
 import { Col, Row } from 'antd';
 import { standardGutter } from '../../shared/constants/gutter';
+import { Logo } from '../../components';
 import './Info.scss';
 
 
@@ -17,7 +18,7 @@ export const Info = () => (
           align="middle"
         >
           <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={6} xl={4}>
-            <img className="info__logo" src="/i/logo.svg" alt="Логотоп Art-Music" />
+            <Logo className="info__logo" />
           </Col>
           <Col xs={22} sm={18} md={16} lg={14} xl={12}>
             <p>

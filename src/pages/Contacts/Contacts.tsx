@@ -5,6 +5,7 @@ import './Contacts.scss';
 export const Contacts = () => (
   <Row
     className="contacts"
+    id="contacts"
     justify="center"
     align="middle"
     gutter={{ ...standardGutter }}

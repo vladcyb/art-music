@@ -16,8 +16,8 @@ const links: LinkType[] = [
     key: '#brands',
   },
   {
-    name: 'О нас',
-    key: '#about',
+    name: 'Аренда',
+    key: '#rent',
   },
   {
     name: 'Контакты',

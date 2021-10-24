@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 import { About, Brands, CallBack, Contacts, Info } from './pages';
 import { Navbar } from './components';
-import { Payment } from './pages/Payment';
+import { Payment } from './pages';
 import { Content } from 'antd/es/layout/layout';
 import './App.scss';
 

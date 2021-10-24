@@ -1,7 +1,7 @@
 import { Button, Col, Form, Input, Row } from 'antd';
 import MaskedInput from 'antd-mask-input';
-import { MyCard } from '../../components/MyCard';
-import { ViewportContainer } from '../../components/ViewportContainer';
+import { MyCard, ViewportContainer } from '../../components';
+import { standardGutter } from '../../shared/constants/gutter';
 import './CallBack.scss';
 
 export const CallBack = () => {
@@ -10,7 +10,11 @@ export const CallBack = () => {
   };
 
   return (
-    <Row className="callback" justify="center">
+    <Row
+      className="callback"
+      justify="center"
+      gutter={{ ...standardGutter }}
+    >
       <Col xs={24} md={16} lg={16} xl={12} xxl={8}>
         <ViewportContainer>
           <MyCard>
