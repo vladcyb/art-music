@@ -1,0 +1,24 @@
+@use "../../assets/scss/mixins/box-shadow" as *;
+
+.repair {
+  padding: 64px var(--content-margin-inline);
+  background: var(--c-light-blue-2);
+
+  &__img-1 {
+    @include box-shadow();
+
+    width: 100%;
+  }
+}
+
+@keyframes repair-text-animation {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

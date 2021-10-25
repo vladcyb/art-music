@@ -4,7 +4,6 @@
 .card {
   @include box-shadow();
 
-  backdrop-filter: blur(25px);
   padding: 24px 16px;
   border-radius: 4px;
   background: var(--c-light-blue-2);

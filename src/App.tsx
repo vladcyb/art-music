@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { Rent, Brands, CallBack, Contacts, Info, Payment } from './pages';
+import { Rent, Brands, CallBack, Contacts, Info, Payment, Repair, Stage } from './pages';
 import { Navbar } from './components';
 import { Content } from 'antd/es/layout/layout';
 import './App.scss';
@@ -12,9 +12,11 @@ export const App = () => (
       <Info />
       <Brands />
       <Rent />
+      <Stage />
+      <Repair />
       <CallBack />
       <Payment />
-      <div style={{ perspective: '800px', overflow: 'hidden' }}>
+      <div className="app__perspective">
         <Contacts />
       </div>
     </Content>

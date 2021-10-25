@@ -4,3 +4,5 @@ export { Rent } from './Rent';
 export { CallBack } from './CallBack';
 export { Contacts } from './Contacts';
 export { Payment } from './Payment';
+export { Repair } from './Repair';
+export { Stage } from './Stage';

@@ -8,6 +8,7 @@
   --content-padding-block: 50px;
   --content-padding-inline: 100px;
   --animation-duration: 400ms;
+  --animation-shape: ease-out;
 
   @media screen and (min-width: $breakpoint-sm) {
     --content-margin-inline: 24px;
@@ -36,6 +37,9 @@
   --c-black: #000;
   --c-light-blue: #40a9ff;
   --c-light-blue-2: #d3e1ff;
+  --c-light-blue-3: #005ba6;
+  --c-blue: #001529;
+  --c-blue-2: #002952;
 
   /* z-index */
   --z-index-navbar: 100;
@@ -54,6 +58,7 @@ body,
 h2 {
   font-weight: 700;
   margin-bottom: 1.5em;
+  //color: var(--c-blue-2);
 }
 
 /* Antd */

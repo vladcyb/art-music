@@ -10,11 +10,11 @@
 
     &_invisible {
       opacity: 0;
-      transform: translateX(-50px);
+      transform: translateX(50px);
     }
 
     &_visible {
-      animation: callback-animation var(--animation-duration) ease;
+      animation: callback-animation var(--animation-duration) var(--animation-shape);
     }
   }
 }
@@ -22,7 +22,7 @@
 @keyframes callback-animation {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
   }
 
   to {

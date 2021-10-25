@@ -3,7 +3,12 @@ import { standardGutter } from '../../shared/constants/gutter';
 import './Brands.scss';
 
 export const Brands = () => (
-  <Row className="brands" justify="center" id="brands">
+  <Row
+    className="brands"
+    justify="center"
+    id="brands"
+    gutter={{ ...standardGutter }}
+  >
     <Col xs={24}>
       <h2>Наши бренды</h2>
       <Row
@@ -11,7 +16,7 @@ export const Brands = () => (
         gutter={{ ...standardGutter }}
       >
         <Col>
-          <h3>Звуковое оборудование и музыкальные инструменты:</h3>
+          <h3>Звуковое оборудование<br />и музыкальные инструменты:</h3>
           <ul>
             <li>Mackie</li>
             <li>Yamaha</li>

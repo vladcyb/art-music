@@ -1,9 +1,7 @@
 @use '../../assets/scss/vars' as *;
 
 .contacts {
-  padding: 32px var(--content-margin-inline);
-  background: var(--c-blue);
-  overflow: hidden;
+  padding: 64px var(--content-margin-inline);
   box-shadow:
     0 0 0.3px inset rgba(0, 0, 0, 0.034),
     0 0 0.7px  inset  rgba(0, 0, 0, 0.051),
@@ -15,11 +13,11 @@
     0 0 7.3px  inset  rgba(0, 0, 0, 0.111),
     0 0 11.3px inset  rgba(0, 0, 0, 0.126),
     0 0 20px   inset  rgba(0, 0, 0, 0.16);
+  transform-origin: top;
   will-change: transform;
 
   &_highlighted {
-    animation: highlighted-animation 1000ms ease;
-    transform-origin: top;
+    animation: contacts-animation 1000ms var(--animation-shape);
   }
 
   h3 {
@@ -40,6 +38,10 @@
     flex-direction: column;
     justify-content: center;
     margin: 0;
+  }
+
+  .viewport-container {
+    background: red;
   }
 
   &__value {
@@ -63,7 +65,7 @@
   }
 }
 
-@keyframes highlighted-animation {
+@keyframes contacts-animation {
   0% {
     transform: rotateX(0deg);
   }
