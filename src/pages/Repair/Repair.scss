@@ -2,7 +2,7 @@
 
 .repair {
   padding: 64px var(--content-margin-inline);
-  background: var(--c-light-blue-2);
+  background: var(--c-light-bg);
 
   &__img-1 {
     @include box-shadow();

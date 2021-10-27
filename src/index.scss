@@ -24,7 +24,7 @@
   }
 
   @media screen and (min-width: $breakpoint-xxl) {
-    --content-margin-inline: 300px;
+    --content-margin-inline: 400px;
   }
 
   /* colors */
@@ -36,7 +36,7 @@
   --c-white-2: #eee;
   --c-black: #000;
   --c-light-blue: #40a9ff;
-  --c-light-blue-2: #d3e1ff;
+  --c-light-bg: rgba(255, 255, 255, 0.4);
   --c-light-blue-3: #005ba6;
   --c-blue: #001529;
   --c-blue-2: #002952;
@@ -46,7 +46,10 @@
 }
 
 body {
-  background: rgba(220, 227, 255, 0.85);
+  //background: rgba(220, 227, 255, 0.85);
+  background-image: url("./assets/i/lights.webp");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body,

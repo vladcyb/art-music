@@ -11,7 +11,7 @@ export const Repair = () => (
     justify="center"
     align="middle"
   >
-    <Col xs={8}>
+    <Col xs={12}>
       <ViewportContainer>
         <h2>Ремонт</h2>
         <p>
@@ -26,7 +26,7 @@ export const Repair = () => (
         </ul>
       </ViewportContainer>
     </Col>
-    <Col xs={10}>
+    <Col xs={12}>
       <img className="repair__img-1" src="/i/igcT_iZ-ELY.jpg" alt="" />
     </Col>
   </Row>
