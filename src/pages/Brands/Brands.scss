@@ -2,9 +2,14 @@
 
 .brands {
   padding: 64px 0;
+  background: var(--c-light-bg);
 
   .card {
     margin-top: 0;
+  }
+
+  ul {
+    font-weight: 600;
   }
 
   h2 {

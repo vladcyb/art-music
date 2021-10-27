@@ -28,6 +28,7 @@
 
   &__content {
     line-height: 32px;
+    text-shadow: 2px 2px 4px black;
 
     p:last-child {
       margin: 0;
@@ -41,21 +42,11 @@
   &__logo {
     width: 100%;
     max-width: 200px;
+    filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 1));
   }
 
   &__content-wrapper {
     color: white;
     font-weight: 500;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background: url(../../assets/i/ny8rSuCji5E.jpg) center 35% / cover no-repeat;
-      filter: brightness(0.3);
-    }
   }
 }

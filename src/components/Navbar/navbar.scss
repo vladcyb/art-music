@@ -7,6 +7,12 @@
   z-index: var(--z-index-navbar);
   justify-content: space-between;
   align-items: center;
+  background: rgba(0, 0, 0, 0.53) !important;
+  transition: background-color var(--animation-duration);
+
+  &:hover {
+    background: rgba(0, 0, 0, 1) !important;
+  }
 
   a {
     display: inline-block;

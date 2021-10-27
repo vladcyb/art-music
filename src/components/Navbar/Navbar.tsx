@@ -7,7 +7,7 @@ const { Link } = Anchor;
 
 export const Navbar = () => (
   <Header className="navbar">
-    <Anchor bounds={200} targetOffset={84}>
+    <Anchor className="navbar__anchor" bounds={200} targetOffset={84}>
       <Link href="#brands" title="Бренды" />
       <Link href="#rent" title="Аренда" />
       <Link className="navbar__contacts" href="#contacts" title="Контакты" />

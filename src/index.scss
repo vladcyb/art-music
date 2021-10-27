@@ -36,7 +36,8 @@
   --c-white-2: #eee;
   --c-black: #000;
   --c-light-blue: #40a9ff;
-  --c-light-blue-2: #d3e1ff;
+  --c-light-bg: rgba(255, 255, 255, 0.7);
+  --c-dark-bg: rgba(0, 0, 0, 0.36);
   --c-light-blue-3: #005ba6;
   --c-blue: #001529;
   --c-blue-2: #002952;
@@ -46,7 +47,9 @@
 }
 
 body {
-  background: rgba(220, 227, 255, 0.85);
+  background-image: url("./assets/i/lights.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body,
@@ -58,7 +61,6 @@ body,
 h2 {
   font-weight: 700;
   margin-bottom: 1.5em;
-  //color: var(--c-blue-2);
 }
 
 /* Antd */
@@ -72,9 +74,13 @@ h2 {
   margin-left: 0 !important;
 }
 
+a {
+  color: #2d009f;
+}
+
 a:hover,
 a:focus {
-  color: #1717e1;
+  color: var(--c-blue);
 }
 
 a:active {

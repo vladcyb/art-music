@@ -1,7 +1,11 @@
 @use "../../assets/scss/mixins/box-shadow" as *;
 
 .stage {
-  padding: 64px var(--content-margin-inline);
+  padding: 64px 0;
+  margin: 0 var(--content-margin-inline);
+  color: white;
+  //background-image: url("../../assets/i/curtain.jpg");
+  //background-size: cover;
 
   &__img {
     @include box-shadow();
@@ -11,20 +15,29 @@
   }
 
   b {
-    color: var(--c-blue-2);
+    //color: var(--c-blue-2);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 1);
   }
 
   ol {
     font-weight: 600;
   }
 
+  h2 {
+    color: white;
+  }
+
   &__services {
+    //margin: -64px calc(-1 * var(--content-margin-inline)) 64px  calc(-1 * var(--content-margin-inline));
+    //background-color: var(--c-light-bg);
     margin-bottom: 64px;
   }
 
   &__services-list {
     padding-inline-start: 0;
-    color: var(--c-blue-2);
+    //color: var(--c-blue-2);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 1);
+    color: white;
 
     li {
       margin-bottom: 24px;
