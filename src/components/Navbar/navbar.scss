@@ -5,8 +5,9 @@
   right: 0;
   top: 0;
   z-index: var(--z-index-navbar);
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 100px !important;
 
   .ant-anchor-wrapper {
     overflow: visible;
@@ -16,6 +17,32 @@
     height: var(--header-height);
     position: relative;
     overflow: visible;
+  }
+
+  &__logo-wrapper {
+    width: 100px;
+    height: var(--header-height);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    a {
+      width: 100px;
+      height: var(--header-height);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  &__logo {
+    width: 50px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .ant-anchor-link {
