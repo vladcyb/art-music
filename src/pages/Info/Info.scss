@@ -1,13 +1,13 @@
 @use '../../assets/scss/vars' as *;
 
 .info {
-  font-size: 22px;
+  font-size: 28px;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+  min-height: calc(100vh - var(--header-height));
 
   &__title {
     text-align: center;
-    font-family: 'Dancing Script', serif;
-    font-size: 48px;
+    font-size: 82px;
     position: relative;
     line-height: 100%;
     margin: 0;
@@ -23,11 +23,11 @@
 
   &__wrapper {
     position: relative;
-    padding: 48px 0;
+    //padding: 98px 0;
   }
 
   &__content {
-    line-height: 32px;
+    //line-height: 32px;
 
     p:last-child {
       margin: 0;
@@ -40,13 +40,18 @@
 
   &__logo {
     width: 100%;
-    max-width: 200px;
+    //max-width: 200px;
     filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 1));
   }
 
   &__content-wrapper {
     color: white;
     font-weight: 500;
+    //min-height: 100vh;
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &::before {
       content: "";
