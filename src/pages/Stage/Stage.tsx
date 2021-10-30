@@ -5,7 +5,7 @@ import './Stage.scss';
 
 export const Stage = () => {
   return (
-    <div className="stage">
+    <div className="stage" id="stage">
       <Row
         className="stage__services"
         wrap

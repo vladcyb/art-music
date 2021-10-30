@@ -6,6 +6,7 @@ import './Repair.scss';
 export const Repair = () => (
   <Row
     className="repair"
+    id="repair"
     wrap
     gutter={{ ...standardGutter }}
     justify="center"

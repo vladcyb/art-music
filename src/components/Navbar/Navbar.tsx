@@ -10,6 +10,8 @@ export const Navbar = () => (
     <Anchor bounds={200} targetOffset={84}>
       <Link href="#brands" title="Бренды" />
       <Link href="#rent" title="Аренда" />
+      <Link href="#stage" title="Одежда сцены" />
+      <Link href="#repair" title="Ремонт" />
       <Link className="navbar__contacts" href="#contacts" title="Контакты" />
     </Anchor>
   </Header>
