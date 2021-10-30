@@ -6,7 +6,6 @@
 
   &__title {
     text-align: center;
-    font-family: 'Dancing Script', serif;
     font-size: 48px;
     position: relative;
     line-height: 100%;
@@ -27,8 +26,6 @@
   }
 
   &__content {
-    line-height: 32px;
-
     p:last-child {
       margin: 0;
     }
@@ -40,7 +37,7 @@
 
   &__logo {
     width: 100%;
-    max-width: 200px;
+    max-width: 270px;
     filter: drop-shadow(20px 30px 20px rgba(0, 0, 0, 1));
   }
 

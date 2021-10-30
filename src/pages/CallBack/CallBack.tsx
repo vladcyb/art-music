@@ -18,7 +18,7 @@ export const CallBack = () => {
       <Col xs={24} md={16} lg={16} xl={12} xxl={8}>
         <ViewportContainer>
           <MyCard>
-            <h2>Заказать звонок</h2>
+            <h2 className="callback__title">Заказать звонок</h2>
             <Form
               layout="vertical"
               onFinish={onSubmit}

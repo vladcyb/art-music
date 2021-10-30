@@ -9,7 +9,7 @@ export const Payment = () => (
     gutter={{ ...standardGutter }}
   >
     <Col sm={24}>
-      <h2>Оплата и доставка</h2>
+      <h1 className="payment__title">Оплата и доставка</h1>
       <p>
         Мы доставляем заказы по всей России следующими транспортными компаниями:
       </p>

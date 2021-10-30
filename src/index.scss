@@ -24,7 +24,7 @@
   }
 
   @media screen and (min-width: $breakpoint-xxl) {
-    --content-margin-inline: 400px;
+    --content-margin-inline: 200px;
   }
 
   /* colors */
@@ -50,18 +50,14 @@ body {
   background-image: url("./assets/i/lights.webp");
   background-size: cover;
   background-attachment: fixed;
-}
-
-body,
-.ant-card {
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
 }
 
-h2 {
+h1 {
   font-weight: 700;
   margin-bottom: 1.5em;
-  //color: var(--c-blue-2);
+  font-size: 2em;
 }
 
 /* Antd */

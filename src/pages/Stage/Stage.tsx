@@ -2,21 +2,8 @@ import { standardGutter } from '../../shared/constants/gutter';
 import { Col, Row } from 'antd';
 import './Stage.scss';
 
-// const serviceList: string[] = [
-//   'Замер помещения и выбор наилучшего варианта одежды сцены',
-//   'Разработка дизайн-проекта для концертных и театральных залов',
-//   'Установка и монтаж конструктивных элементов',
-// ];
-
 
 export const Stage = () => {
-  // const [isListVisible, setIsListVisible] = useState(false);
-
-  // const toggle = () => {
-  //   setIsListVisible((v) => !v);
-  // };
-  // console.log(isListVisible);
-
   return (
     <div className="stage">
       <Row
@@ -27,9 +14,9 @@ export const Stage = () => {
         align="top"
       >
         <Col xs={16}>
-          <h2>Одежда сцены</h2>
+          <h1 className="stage__title">Одежда сцены</h1>
           <p>
-            <b>В наши услуги по обустройству сцены входит:</b>
+            <h3 className="stage__subtitle">В наши услуги по обустройству сцены входит:</h3>
           </p>
           <ul className="stage__services-list">
             <li>
@@ -60,7 +47,7 @@ export const Stage = () => {
           <img className="stage__img" src="/i/FU9UuCVgikc.jpg" alt="" />
         </Col>
         <Col xs={12}>
-          <ol>
+          <ol className="stage__scheme">
             <li>Механизм декорационного подъема</li>
             <li>Механизм софитного подъема (на вальной лебедке)</li>
             <li>Софитная ферма</li>

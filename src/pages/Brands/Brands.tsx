@@ -10,7 +10,7 @@ export const Brands = () => (
     gutter={{ ...standardGutter }}
   >
     <Col xs={24}>
-      <h2>Наши бренды</h2>
+      <h1 className="brands__title">Наши бренды</h1>
       <Row
         justify="center"
         gutter={{ ...standardGutter }}

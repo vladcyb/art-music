@@ -1,8 +1,9 @@
 .callback {
   padding: 64px 0;
 
-  h2 {
+  &__title {
     text-align: center;
+    font-weight: 700;
   }
 
   .viewport-container {
