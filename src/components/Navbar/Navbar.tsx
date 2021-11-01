@@ -1,6 +1,6 @@
 import { Anchor, Layout } from 'antd';
-import './navbar.scss';
 import { Logo } from '../Logo';
+import './navbar.scss';
 
 const { Header } = Layout;
 const { Link } = Anchor;
