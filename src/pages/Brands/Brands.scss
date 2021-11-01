@@ -1,6 +1,9 @@
 @use "../../assets/scss/vars" as *;
+@use "../../assets/scss/mixins/box-shadow" as *;
 
 .brands {
+  @include box-shadow-inset();
+
   padding: 64px 0;
 
   .card {

@@ -1,4 +1,8 @@
+@use "../../assets/scss/mixins/box-shadow" as *;
+
 .callback {
+  @include box-shadow-inset();
+
   padding: 64px 0;
 
   &__title {

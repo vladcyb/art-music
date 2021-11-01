@@ -1,6 +1,8 @@
 @use "../../assets/scss/mixins/box-shadow" as *;
 
 .stage {
+  @include box-shadow-inset();
+
   padding: 64px var(--content-margin-inline);
 
   &__img {
