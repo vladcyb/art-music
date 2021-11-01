@@ -21,6 +21,7 @@
     height: var(--header-height);
     position: relative;
     overflow: visible;
+    text-align: center;
   }
 
   &__logo-wrapper {
@@ -50,17 +51,8 @@
   }
 
   .ant-anchor-link {
-    transition: background-color 400ms;
-
-    &::before {
-      content: "";
-      position: absolute;
-      transition: background-color 400ms;
-      height: 2px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+    transition: background-color, border-bottom-color 400ms;
+    border-bottom: 2px solid;
 
     .ant-anchor-link-title {
       text-shadow: none;
@@ -77,31 +69,24 @@
   }
 
   .ant-anchor-link-active {
-    a {
-      display: inline-block;
-    }
+    border-bottom: 2px solid white;
 
     .ant-anchor-link-title {
       color: var(--c-white);
+      text-shadow: 0 0 8px white;
     }
 
-    &::before {
-      background: white;
-    }
-
-    background: radial-gradient(10.03% 20.49% at 69.34% 49.84%, rgba(219, 255, 0, 0.2) 0%, rgba(219, 255, 0, 0) 100%), radial-gradient(12.92% 26.39% at 30.82% 49.84%, rgba(5, 0, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(19.28% 18.2% at 78.41% 49.84%, rgba(0, 255, 87, 0.25) 0%, rgba(51, 255, 0, 0) 100%), radial-gradient(32.54% 38.85% at 50% 50%, rgba(255, 21, 21, 0.5) 0%, rgba(255, 0, 0, 0) 100%), radial-gradient(18.2% 20.49% at 22.23% 49.84%, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0) 100%), #001529;
+    //background: radial-gradient(10.03% 20.49% at 69.34% 49.84%, rgba(219, 255, 0, 0.2) 0%, rgba(219, 255, 0, 0) 100%), radial-gradient(12.92% 26.39% at 30.82% 49.84%, rgba(5, 0, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(19.28% 18.2% at 78.41% 49.84%, rgba(0, 255, 87, 0.25) 0%, rgba(51, 255, 0, 0) 100%), radial-gradient(32.54% 38.85% at 50% 50%, rgba(255, 21, 246, 0.5) 0%, rgba(255, 0, 0, 0) 100%), radial-gradient(18.2% 20.49% at 22.23% 49.84%, rgba(0, 255, 255, 0.2) 0%, rgba(0, 255, 255, 0) 100%), #001529;
     //background: radial-gradient(47.39% 30% at 50.08% 49.84%, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0) 100%), #001529;
-    //background: var(--c-blue-2);
+    background: radial-gradient(30.42% 50.16% at 69.58% 49.84%, rgba(5, 0, 255, 0.28) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(28.55% 50.16% at 30.82% 49.84%, rgba(5, 0, 255, 0.28) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(32.54% 38.85% at 50% 50%, rgba(255, 21, 246, 0.5) 0%, rgba(255, 0, 0, 0) 100%), #001529;
     overflow: visible;
   }
 
   .ant-anchor-link:hover {
-    .ant-anchor-link-title {
-      color: white !important;
-    }
+    border-bottom-color: white;
 
-    &::before {
-      background: white;
+    .ant-anchor-link-title {
+      color: white;
     }
   }
 
