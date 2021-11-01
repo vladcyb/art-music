@@ -20,7 +20,7 @@ export const CallBack = () => {
       justify="center"
       gutter={{ ...standardGutter }}
     >
-      <Col xs={24} md={16} lg={16} xl={12} xxl={8}>
+      <Col xs={24} md={14} lg={12} xl={10} xxl={8}>
         <ViewportContainer>
           <MyCard>
             <h2 className="callback__title">Заказать звонок</h2>
