@@ -4,34 +4,9 @@
   padding: 64px var(--content-padding-inline);
   background: var(--c-light-bg);
 
-  .viewport-container {
-    &_invisible {
-      transform: translateX(-50px);
-      opacity: 0;
-    }
-
-    &_visible {
-      transform: translateX(0);
-      opacity: 1;
-      animation: repair-text-animation var(--animation-duration) var(--animation-shape);
-    }
-  }
-
   &__img-1 {
     @include box-shadow();
 
     width: 100%;
-  }
-}
-
-@keyframes repair-text-animation {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }

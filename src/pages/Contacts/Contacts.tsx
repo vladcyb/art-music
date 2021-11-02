@@ -2,7 +2,6 @@ import { Col, Row } from 'antd';
 import { standardGutter } from '../../shared/constants/gutter';
 import { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { ViewportContainer } from '../../components';
 import './Contacts.scss';
 
 export const Contacts = () => {
@@ -21,7 +20,7 @@ export const Contacts = () => {
   }, []);
 
   return (
-    <ViewportContainer
+    <div
       className={classNames('contacts', {
         contacts_highlighted: highlighted,
       })}>
@@ -52,6 +51,6 @@ export const Contacts = () => {
           </p>
         </Col>
       </Row>
-    </ViewportContainer>
+    </div>
   );
 };
