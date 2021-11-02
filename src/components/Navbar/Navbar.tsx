@@ -18,6 +18,8 @@ export const Navbar = () => (
       <Link className="navbar__item" href="#rent" title="Аренда" />
       <Link className="navbar__item" href="#stage" title="Одежда сцены" />
       <Link className="navbar__item" href="#repair" title="Ремонт" />
+      <Link className="navbar__item" href="#callback" title="Заказать звонок" />
+      <Link className="navbar__item" href="#payment" title="Оплата и доставка" />
       <Link className="navbar__item navbar__contacts" href="#contacts" title="Контакты" />
     </Anchor>
   </Header>

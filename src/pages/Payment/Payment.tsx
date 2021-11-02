@@ -5,6 +5,7 @@ import './Payment.scss';
 export const Payment = () => (
   <Row
     className="payment"
+    id="payment"
     justify="center"
     gutter={{ ...standardGutter }}
   >

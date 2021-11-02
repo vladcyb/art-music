@@ -35,7 +35,7 @@ export const CallBack = () => {
   );
 
   return (
-    <div className="callback">
+    <div className="callback" id="callback">
       <ViewportContainer>
         <div className="callback__card">
           <div className="callback__card-title">Заказать звонок</div>
