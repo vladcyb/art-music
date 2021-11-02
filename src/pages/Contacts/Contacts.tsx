@@ -20,7 +20,7 @@ export const Contacts = () => {
   }, []);
 
   return (
-    <div
+    <footer
       className={classNames('contacts', {
         contacts_highlighted: highlighted,
       })}>
@@ -51,6 +51,6 @@ export const Contacts = () => {
           </p>
         </Col>
       </Row>
-    </div>
+    </footer>
   );
 };
