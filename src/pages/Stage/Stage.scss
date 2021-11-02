@@ -3,7 +3,7 @@
 .stage {
   @include box-shadow-inset();
 
-  padding: 64px var(--content-margin-inline);
+  padding: 64px var(--content-padding-inline);
 
   &__img {
     @include box-shadow();
@@ -50,6 +50,7 @@
         text-align: center;
         position: relative;
         line-height: 16px;
+        font-weight: 500;
 
         &::before {
           content: "";

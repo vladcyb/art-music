@@ -3,28 +3,26 @@
 :root {
   /* variables */
   --header-height: 64px;
-  --content-margin-inline: 10px;
-  --content-margin-block: 16px;
+  --content-padding-inline: 10px;
   --content-padding-block: 50px;
-  --content-padding-inline: 100px;
   --animation-duration: 400ms;
   --animation-shape: ease-out;
+  --font-size: 18px;
 
   @media screen and (min-width: $breakpoint-sm) {
-    --content-margin-inline: 24px;
-    --content-margin-block: 50px;
+    --content-padding-inline: 24px;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    --content-margin-inline: 100px;
+    --content-padding-inline: 100px;
   }
 
   @media screen and (min-width: $breakpoint-xl) {
-    --content-margin-inline: 150px;
+    --content-padding-inline: 150px;
   }
 
   @media screen and (min-width: $breakpoint-xxl) {
-    --content-margin-inline: 200px;
+    --content-padding-inline: 200px;
   }
 
   /* colors */
@@ -36,7 +34,7 @@
   --c-white-2: #eee;
   --c-black: #000;
   --c-light-blue: #40a9ff;
-  --c-light-bg: rgba(255, 255, 255, 0.4);
+  --c-light-bg: rgba(255, 255, 255, 0.7);
   --c-light-blue-3: #005ba6;
   --c-blue: #001529;
   --c-blue-2: #002952;
@@ -50,7 +48,7 @@ body {
   background-image: url("./assets/i/lights.webp");
   background-size: cover;
   background-attachment: fixed;
-  font-size: 18px;
+  font-size: var(--font-size);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -60,7 +58,8 @@ h1 {
   font-size: 2em;
 }
 
-/* Antd */
+/* =========== Antd =========== */
+
 .ant-menu.ant-menu-dark > .ant-menu-item:hover,
 .ant-menu.ant-menu-dark {
   background: transparent;
@@ -70,6 +69,18 @@ h1 {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
+
+.ant-form-item-control input[mask] {
+  font-family: monospace, sans-serif;
+}
+
+.ant-form-item-has-error {
+  input {
+    color: #ff4d4f;
+  }
+}
+
+/* ============================ */
 
 a:hover,
 a:focus {

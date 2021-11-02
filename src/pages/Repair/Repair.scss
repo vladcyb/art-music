@@ -1,7 +1,7 @@
 @use "../../assets/scss/mixins/box-shadow" as *;
 
 .repair {
-  padding: 64px var(--content-margin-inline);
+  padding: 64px var(--content-padding-inline);
   background: var(--c-light-bg);
 
   .viewport-container {
