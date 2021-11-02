@@ -6,19 +6,31 @@ import axios from 'axios';
 import { PreferredMethodEnum } from './enums/PreferredMethodEnum';
 import './CallBack.scss';
 
+interface ICallbackForm {
+  name?: string;
+  phone?: string;
+  email?: string;
+}
 
 export const CallBack = () => {
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: ICallbackForm) => {
     setValidateTrigger('onChange');
-    const data = {
-      ...values,
-      phone: `+7 ${values.phone}`,
+    const data: ICallbackForm = {
+      name: values.name,
     };
+    if (preferredMethod === PreferredMethodEnum.Phone) {
+      data.phone = `+7 ${values.phone}`;
+      data.email = 'Нет';
+    } else {
+      data.email = values.email;
+      data.phone = 'Нет';
+    }
+
     axios.post('/callMe', data, { withCredentials: true });
   };
 
   const [validateTrigger, setValidateTrigger] = useState<"onSubmit" | "onChange">('onSubmit');
-  const [preferredPhone, setPreferredPhone] = useState<PreferredMethodEnum>(
+  const [preferredMethod, setPreferredMethod] = useState<PreferredMethodEnum>(
     PreferredMethodEnum.Phone,
   );
 
@@ -60,9 +72,9 @@ export const CallBack = () => {
               <Select
                 className="callback__select"
                 placeholder="Выберите..."
-                defaultValue={PreferredMethodEnum.Phone}
+                value={preferredMethod}
                 onChange={(value) => {
-                  setPreferredPhone(value);
+                  setPreferredMethod(value);
                 }}
               >
                 <Select.Option value={PreferredMethodEnum.Phone}>
@@ -73,7 +85,7 @@ export const CallBack = () => {
                 </Select.Option>
               </Select>
             </Form.Item>
-            {preferredPhone === PreferredMethodEnum.Phone ? (
+            {preferredMethod === PreferredMethodEnum.Phone ? (
               <Form.Item
                 label="Телефон:"
                 name="phone"
