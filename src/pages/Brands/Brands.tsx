@@ -16,7 +16,9 @@ export const Brands = () => (
         gutter={{ ...standardGutter }}
       >
         <Col>
-          <h3>Звуковое оборудование<br />и музыкальные инструменты:</h3>
+          <h3 className="brands__subtitle">
+            Звуковое оборудование<br />и музыкальные инструменты:
+          </h3>
           <ul>
             <li>Mackie</li>
             <li>Yamaha</li>
@@ -38,7 +40,7 @@ export const Brands = () => (
           </ul>
         </Col>
         <Col>
-          <h3>Световое оборудование:</h3>
+          <h3 className="brands__subtitle">Световое оборудование:</h3>
           <ul>
             <li>INVOLIGHT</li>
             <li>ADJ</li>
@@ -51,7 +53,7 @@ export const Brands = () => (
           </ul>
         </Col>
         <Col>
-          <h3>Аксессуары и коммутация:</h3>
+          <h3 className="brands__subtitle">Аксессуары и коммутация:</h3>
           <ul>
             <li>GATOR</li>
             <li>ONSTAGE</li>

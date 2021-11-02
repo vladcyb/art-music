@@ -6,11 +6,11 @@
 
   padding: 64px 0;
 
-  .card {
-    margin-top: 0;
-  }
-
   &__title {
     text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 600;
   }
 }

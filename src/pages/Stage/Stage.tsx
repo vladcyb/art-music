@@ -15,9 +15,7 @@ export const Stage = () => {
       >
         <Col xs={16}>
           <h1 className="stage__title">Одежда сцены</h1>
-          <p>
-            <h3 className="stage__subtitle">В наши услуги по обустройству сцены входит:</h3>
-          </p>
+          <h3 className="stage__subtitle">В наши услуги по обустройству сцены входит:</h3>
           <ul className="stage__services-list">
             <li>
               <span>
