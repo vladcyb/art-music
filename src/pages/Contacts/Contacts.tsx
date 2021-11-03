@@ -13,7 +13,7 @@ export const Contacts = () => {
   };
 
   useEffect(() => {
-    const contactsLink = document.querySelector('.navbar__contacts');
+    const contactsLink = document.querySelector('.my-header__contacts');
     contactsLink?.addEventListener('click', highlight);
 
     return () => contactsLink?.removeEventListener('click', highlight);

@@ -1,10 +1,10 @@
-.navbar {
+.my-header {
   display: flex;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  z-index: var(--z-index-navbar);
+  z-index: var(--z-index-header);
   justify-content: flex-start;
   align-items: center;
   padding: 0 100px !important;
