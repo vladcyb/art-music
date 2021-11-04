@@ -4,17 +4,22 @@
   /* variables */
   --header-height: 64px;
   --content-padding-inline: 10px;
-  --content-padding-block: 50px;
+  --content-padding-block: 32px;
   --animation-duration: 400ms;
   --animation-shape: ease-out;
-  --font-size: 16px;
+  --font-size: 14px;
 
   @media screen and (min-width: $breakpoint-sm) {
     --content-padding-inline: 24px;
   }
 
+  @media screen and (min-width: $breakpoint-md) {
+    --content-padding-block: 64px;
+  }
+
   @media screen and (min-width: $breakpoint-lg) {
     --content-padding-inline: 100px;
+    --font-size: 16px;
   }
 
   @media screen and (min-width: $breakpoint-xl) {
@@ -56,7 +61,6 @@ body {
 h1 {
   font-weight: 700;
   margin-bottom: 1.5em;
-  font-size: 2em;
 }
 
 /* =========== Antd =========== */

@@ -17,10 +17,10 @@ export const Info = () => (
           justify="center"
           align="middle"
         >
-          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={4}>
+          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={5} xl={3}>
             <Logo className="info__logo" />
           </Col>
-          <Col xs={22} sm={16} md={14} lg={12}>
+          <Col xs={22} sm={16} md={14} lg={16} xl={10}>
             <p>
               ООО &quot;Арт-Мьюзик&quot; занимается поставкой и&nbsp;арендой
               звукового и&nbsp;светового оборудования, а&nbsp;также их монтажем.<br />

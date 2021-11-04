@@ -1,7 +1,7 @@
 @use '../../assets/scss/vars' as *;
 
 .contacts {
-  padding: 64px var(--content-padding-inline);
+  padding: var(--content-padding-block) var(--content-padding-inline);
   box-shadow:
     0 0 0.3px inset rgba(0, 0, 0, 0.034),
     0 0 0.7px  inset  rgba(0, 0, 0, 0.051),

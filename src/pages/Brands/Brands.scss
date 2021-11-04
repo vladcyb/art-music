@@ -4,7 +4,7 @@
 .brands {
   @include box-shadow-inset();
 
-  padding: 64px 0;
+  padding: var(--content-padding-block) 0;
 
   &__title {
     text-align: center;

@@ -2,19 +2,23 @@
 @use '../../assets/scss/vars' as *;
 
 .info {
-  font-size: 22px;
+  font-size: 14px;
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
 
-  @include media("<xxl") {
-    font-size: 20px;
-  }
-
-  @include media("<xl") {
+  @include media(">=sm") {
     font-size: 16px;
   }
 
-  @include media("<sm") {
-    font-size: 14px;
+  @include media(">=md") {
+    font-size: 18px;
+  }
+
+  @include media(">=xl") {
+    font-size: 20px;
+  }
+
+  @include media(">=xxl") {
+    font-size: 22px;
   }
 
   &__title {
@@ -66,7 +70,7 @@
       justify-content: flex-start !important;
     }
 
-    @include media(">=lg") {
+    @include media(">=xl") {
       justify-content: center !important;
     }
   }
