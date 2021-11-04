@@ -1,3 +1,4 @@
+@use './node_modules/include-media/dist/include-media' as *;
 @use '../../assets/scss/vars' as *;
 
 .info {
@@ -51,7 +52,10 @@
       top: 0;
       right: 0;
       bottom: 0;
-      background: url(../../assets/i/ny8rSuCji5E.jpg) center 35% / cover no-repeat;
+      background-image: url(../../assets/i/ny8rSuCji5E.jpg);
+      background-repeat: no-repeat;
+      background-position: 30% 10%;
+      background-size: cover;
       filter: brightness(0.3);
     }
   }
