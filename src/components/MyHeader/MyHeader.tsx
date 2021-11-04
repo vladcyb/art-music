@@ -5,8 +5,6 @@ import './MyHeader.scss';
 const { Header } = Layout;
 const { Link } = Anchor;
 
-console.log(process.env.NODE_ENV);
-
 export const MyHeader = () => (
   <Header className="my-header">
     <div className="my-header__logo-wrapper">
