@@ -12,7 +12,7 @@ export const MyHeader = () => (
         <Logo className="my-header__logo" />
       </a>
     </div>
-    <Anchor bounds={200} targetOffset={84}>
+    <Anchor bounds={200} targetOffset={84} style={{ width: '1000%' }}>
       <Link className="my-header__item" href="#brands" title="Бренды" />
       <Link className="my-header__item" href="#rent" title="Аренда" />
       <Link className="my-header__item" href="#stage" title="Одежда сцены" />
