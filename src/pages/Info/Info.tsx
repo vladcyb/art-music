@@ -17,13 +17,13 @@ export const Info = () => (
           justify="center"
           align="middle"
         >
-          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={6} xl={4}>
+          <Col className="info__logo-wrapper" xs={0} sm={4} md={6} lg={4}>
             <Logo className="info__logo" />
           </Col>
-          <Col xs={22} sm={18} md={16} lg={14} xl={12}>
+          <Col xs={22} sm={16} md={14} lg={12}>
             <p>
-              ООО &quot;Арт-Мьюзик&quot; занимается поставкой и арендой<br />
-              звукового и светового оборудования, а&nbsp;также их монтажем.<br />
+              ООО &quot;Арт-Мьюзик&quot; занимается поставкой и&nbsp;арендой
+              звукового и&nbsp;светового оборудования, а&nbsp;также их монтажем.<br />
               В том числе  мы предлагаем широкий выбор любых музыкальных инструментов
               от&nbsp;разных брендов.
             </p>
