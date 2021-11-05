@@ -1,19 +1,22 @@
-@use "../../assets/scss/mixins/box-shadow" as *;
+@use './node_modules/include-media/dist/include-media' as *;
+@use "../../assets/scss/mixins" as *;
+@use "../../assets/scss/vars" as *;
 
 .stage {
   @include box-shadow-inset();
+  @include white-text();
 
   padding: var(--content-padding-block) var(--content-padding-inline);
 
   &__img {
     @include box-shadow();
 
-    width: 100%;
-    max-width: 100%;
-  }
+    @include media("<lg") {
+      margin-bottom: 32px;
+    }
 
-  b {
-    color: var(--c-blue-2);
+    width: 100%;
+    max-width: 650px;
   }
 
   ol {
@@ -41,8 +44,8 @@
   }
 
   &__services-list {
-    padding-inline-start: 0;
-    color: var(--c-blue-2);
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
 
     li {
       margin-bottom: 24px;
@@ -61,9 +64,10 @@
           height: 28px;
           top: -6px;
           left: -40px;
-          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23005ba6' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23faf' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
           background-repeat: no-repeat;
           background-size: cover;
+          filter: drop-shadow(2px 2px 2px rgba(black, 80%));
         }
       }
     }

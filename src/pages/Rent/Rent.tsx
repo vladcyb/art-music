@@ -11,12 +11,14 @@ export const Rent = () => (
     align="middle"
     gutter={{ ...standardGutter }}
   >
-    <Col className="rent__img" xs={9}>
+    <Col xs={24}>
+      <h1 className="rent__title">Аренда и сборка сцены</h1>
+    </Col>
+    <Col xs={16} md={10} xl={8} xxl={8}>
       <img className="rent__img" src="/i/noGKu5ogN9Q.jpg" alt="" />
     </Col>
-    <Col xs={1} />
-    <Col xs={14}>
-      <h1>Аренда и сборка сцены</h1>
+    <Col xs={0} md={1} />
+    <Col xs={24} md={12} xl={13}>
       <p>
         <b>Наша компания предоставляет полный спектр сценического оборудования:</b>
       </p>

@@ -1,10 +1,11 @@
 @use "../../assets/scss/vars" as *;
-@use "../../assets/scss/mixins/box-shadow" as *;
+@use "../../assets/scss/mixins" as *;
 
 .brands {
   @include box-shadow-inset();
+  @include white-text();
 
-  padding: var(--content-padding-block) 0;
+  padding: var(--content-padding-block) var(--content-padding-inline);
 
   &__title {
     text-align: center;

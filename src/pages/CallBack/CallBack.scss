@@ -1,4 +1,4 @@
-@use "../../assets/scss/mixins/box-shadow" as *;
+@use "../../assets/scss/mixins" as *;
 
 .callback {
   @include box-shadow-inset();
