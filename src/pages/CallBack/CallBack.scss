@@ -1,12 +1,18 @@
+@use './node_modules/include-media/dist/include-media' as *;
 @use "../../assets/scss/mixins" as *;
+@use "../../assets/scss/vars" as *;
 
 .callback {
   @include box-shadow-inset();
 
-  padding: var(--content-padding-block) 0;
+  padding: var(--content-padding-block) var(--content-padding-inline);
 
   &__card {
     @include box-shadow();
+
+    @include media("<sm") {
+      padding: 24px;
+    }
 
     border-radius: 4px;
     max-width: 500px;

@@ -24,7 +24,7 @@ export const Repair = () => (
         <li>Усилители</li>
       </ul>
     </Col>
-    <Col xs={20} md={10}>
+    <Col xs={24} md={10}>
       <img className="repair__img-1" src="/i/igcT_iZ-ELY.jpg" alt="" />
     </Col>
   </Row>

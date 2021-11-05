@@ -40,7 +40,7 @@ export const Stage = () => (
       justify="center"
       align="middle"
     >
-      <Col xs={16} md={10} xl={8} xxl={10}>
+      <Col xs={24} md={10} xl={8} xxl={10}>
         <img className="stage__img" src="/i/FU9UuCVgikc.jpg" alt="Схема сцены" />
       </Col>
       <Col xs={0} md={1} />

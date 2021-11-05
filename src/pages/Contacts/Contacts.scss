@@ -1,3 +1,4 @@
+@use './node_modules/include-media/dist/include-media' as *;
 @use '../../assets/scss/vars' as *;
 @use '../../assets/scss/mixins' as *;
 
@@ -12,10 +13,11 @@
     animation: contacts-animation 1000ms var(--animation-shape);
   }
 
-  h3 {
+  &__title {
+    @include white-text();
+
     text-align: center;
     font-weight: 600;
-    color: white;
   }
 
   a {
@@ -34,12 +36,21 @@
   }
 
   &__label {
+    @include media("<sm") {
+      text-align: center;
+    }
+
     text-shadow: 0 0 4px rgba(black, 80%);
     font-weight: 600;
     color: #ff6767;
   }
 
   &__value {
+    @include media("<sm") {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
     padding-left: 5px;
     display: flex;
     flex-direction: column;
