@@ -1,17 +1,26 @@
-@use "../../assets/scss/mixins/box-shadow" as *;
+@use './node_modules/include-media/dist/include-media' as *;
+@use "../../assets/scss/mixins" as *;
+@use "../../assets/scss/vars" as *;
 
 .rent {
   padding: var(--content-padding-block) var(--content-padding-inline);
   background: var(--c-light-bg);
 
   &__img {
+    @include box-shadow();
+
     width: 100%;
+    max-width: 515px;
     display: flex;
     justify-content: stretch;
     align-items: stretch;
 
-    img {
-      @include box-shadow();
+    @include media("<lg") {
+      margin-bottom: 32px;
     }
+  }
+
+  &__title {
+    text-align: center;
   }
 }

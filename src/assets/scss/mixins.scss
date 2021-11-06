@@ -25,3 +25,18 @@
     inset 0 0 11.3px rgba(0, 0, 0, 0.126),
     inset 0 0 20px   rgba(0, 0, 0, 0.16);
 }
+
+@mixin white-text() {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(black, 80%);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(black, 60%);
+  }
+}

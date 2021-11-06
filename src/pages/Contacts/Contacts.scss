@@ -1,18 +1,12 @@
+@use './node_modules/include-media/dist/include-media' as *;
 @use '../../assets/scss/vars' as *;
+@use '../../assets/scss/mixins' as *;
 
 .contacts {
+  @include box-shadow-inset();
+  @include white-text();
+
   padding: var(--content-padding-block) var(--content-padding-inline);
-  box-shadow:
-    0 0 0.3px inset rgba(0, 0, 0, 0.034),
-    0 0 0.7px  inset  rgba(0, 0, 0, 0.051),
-    0 0 1.2px  inset  rgba(0, 0, 0, 0.063),
-    0 0 1.7px  inset  rgba(0, 0, 0, 0.073),
-    0 0 2.5px  inset  rgba(0, 0, 0, 0.082),
-    0 0 3.5px  inset  rgba(0, 0, 0, 0.091),
-    0 0 5px    inset  rgba(0, 0, 0, 0.1),
-    0 0 7.3px  inset  rgba(0, 0, 0, 0.111),
-    0 0 11.3px inset  rgba(0, 0, 0, 0.126),
-    0 0 20px   inset  rgba(0, 0, 0, 0.16);
   transform-origin: top;
   will-change: transform;
 
@@ -20,13 +14,24 @@
     animation: contacts-animation 1000ms var(--animation-shape);
   }
 
-  h3 {
+  &__title {
     text-align: center;
     font-weight: 600;
   }
 
   a {
     font-weight: 600;
+    color: white;
+    text-shadow: 0 0 4px #b93cff;
+
+    &:hover,
+    &:focus {
+      color: #d258ff;
+    }
+
+    &:active {
+      color: #dc93ff;
+    }
   }
 
   &__phone {
@@ -40,7 +45,22 @@
     margin: 0;
   }
 
+  &__label {
+    @include media("<sm") {
+      text-align: center;
+    }
+
+    text-shadow: 0 0 4px rgba(black, 80%);
+    font-weight: 600;
+    color: #c0a0ff;
+  }
+
   &__value {
+    @include media("<sm") {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
     padding-left: 5px;
     display: flex;
     flex-direction: column;

@@ -11,7 +11,7 @@ export const Repair = () => (
     justify="center"
     align="middle"
   >
-    <Col xs={8}>
+    <Col xs={24} md={12} lg={10}>
       <h1>Ремонт</h1>
       <p>
         Наша компания предоставляет услуги
@@ -24,7 +24,7 @@ export const Repair = () => (
         <li>Усилители</li>
       </ul>
     </Col>
-    <Col xs={12}>
+    <Col xs={24} md={10}>
       <img className="repair__img-1" src="/i/igcT_iZ-ELY.jpg" alt="" />
     </Col>
   </Row>

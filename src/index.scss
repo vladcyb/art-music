@@ -1,4 +1,6 @@
+@use './node_modules/include-media/dist/include-media' as *;
 @use './assets/scss/vars' as *;
+@use './assets/scss/mixins' as *;
 
 :root {
   /* variables */
@@ -11,6 +13,7 @@
 
   @media screen and (min-width: $breakpoint-sm) {
     --content-padding-inline: 24px;
+    --content-padding-block: 64px;
   }
 
   @media screen and (min-width: $breakpoint-md) {
@@ -18,12 +21,12 @@
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    --content-padding-inline: 100px;
+    --content-padding-inline: 32px;
     --font-size: 16px;
   }
 
   @media screen and (min-width: $breakpoint-xl) {
-    --content-padding-inline: 150px;
+    --content-padding-inline: 64px;
   }
 
   @media screen and (min-width: $breakpoint-xxl) {
@@ -51,11 +54,25 @@
 }
 
 body {
-  background-image: url("./assets/i/lights.webp");
-  background-size: cover;
-  background-attachment: fixed;
   font-size: var(--font-size);
   font-family: 'Montserrat', sans-serif;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-image: url("./assets/i/pexels-cottonbro-xl-portrait.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    z-index: -1;
+    //filter: blur(2px) contrast(0.8);
+    filter: hue-rotate(290deg) contrast(0.6) blur(2px) brightness(0.8);
+  }
 }
 
 h1 {
@@ -86,15 +103,6 @@ h1 {
 }
 
 /* ============================ */
-
-a:hover,
-a:focus {
-  color: #1717e1;
-}
-
-a:active {
-  color: #080881;
-}
 
 #brands,
 #contacts,

@@ -1,4 +1,6 @@
-@use "../../assets/scss/mixins/box-shadow" as *;
+@use './node_modules/include-media/dist/include-media' as *;
+@use "../../assets/scss/mixins" as *;
+@use "../../assets/scss/vars" as *;
 
 .repair {
   padding: var(--content-padding-block) var(--content-padding-inline);
@@ -8,5 +10,10 @@
     @include box-shadow();
 
     width: 100%;
+    max-width: 647px;
+
+    @include media("<md") {
+      margin-top: 32px;
+    }
   }
 }

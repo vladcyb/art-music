@@ -140,6 +140,7 @@ export const CallBack = () => {
                     prefix="+7"
                     autoComplete="new-password"
                     disabled={disabled}
+                    inputMode="numeric"
                   />
                 </Form.Item>
               ) : (
