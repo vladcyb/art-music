@@ -1,13 +1,40 @@
+@use '../../../../node_modules/include-media/dist/include-media' as *;
+@use "../../../assets/scss/vars" as *;
+@use "../../../assets/scss/mixins" as *;
+
 .my-header {
-  display: flex;
+  @include box-shadow();
+
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: var(--z-index-header);
+  padding: 0 10px 0 100px !important;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 100px !important;
+
+  &__menu-btn {
+    display: none !important;
+    z-index: 101;
+
+    &-icon {
+      color: white !important;
+    }
+  }
+
+  @include media ("<lg") {
+    justify-content: flex-end;
+
+    &__desktop {
+      display: none;
+    }
+
+    &__menu-btn {
+      display: block !important;
+    }
+  }
 
   .ant-anchor-wrapper {
     overflow: visible;

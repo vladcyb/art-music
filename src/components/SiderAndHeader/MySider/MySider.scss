@@ -1,0 +1,33 @@
+@use "./node_modules/include-media/dist/include-media" as *;
+@use "../../../assets/scss/vars" as *;
+
+.my-sider {
+  @include media(">=lg") {
+    display: none;
+  }
+
+  .ant-anchor-ink {
+    &::before {
+      display: none;
+    }
+  }
+
+  .ant-menu-inline {
+    width: 203px !important;
+  }
+
+  .ant-anchor-link {
+    position: relative;
+    padding: 0;
+
+    a {
+      display: block;
+      padding: 16px 0 16px 16px;
+      color: white;
+    }
+  }
+
+  .ant-anchor-ink-ball {
+    display: none !important;
+  }
+}
