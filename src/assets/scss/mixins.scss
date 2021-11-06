@@ -28,7 +28,7 @@
 
 @mixin white-text() {
   color: white;
-  text-shadow: 2px 2px 2px rgba(black, 80%);
+  text-shadow: 2px 2px 4px rgba(black, 80%);
 
   h1,
   h2,
@@ -37,6 +37,6 @@
   h5,
   h6 {
     color: #fff;
-    text-shadow: 1px 1px 0 black, 2px 2px 4px #5900a2;
+    text-shadow: 4px 4px 4px rgba(black, 60%);
   }
 }

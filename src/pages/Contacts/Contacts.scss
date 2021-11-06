@@ -4,6 +4,7 @@
 
 .contacts {
   @include box-shadow-inset();
+  @include white-text();
 
   padding: var(--content-padding-block) var(--content-padding-inline);
   transform-origin: top;
@@ -14,8 +15,6 @@
   }
 
   &__title {
-    @include white-text();
-
     text-align: center;
     font-weight: 600;
   }
