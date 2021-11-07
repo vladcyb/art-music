@@ -109,3 +109,7 @@ h1 {
 #rent {
   scroll-margin-block: calc(var(--header-height) + 20px);
 }
+
+.no-scroll {
+  overflow: hidden;
+}

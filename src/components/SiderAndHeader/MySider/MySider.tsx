@@ -1,5 +1,5 @@
 import { Anchor, Layout } from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './MySider.scss';
 
 
@@ -42,36 +42,53 @@ const links: Array<{ link: string, title: string }> = [
   },
 ];
 
-export const MySider = ({ collapsed, toggle }: IMySiderProps) => (
-  <Sider
-    className="my-sider"
-    style={{
-      overflow: 'auto',
-      position: 'fixed',
-      right: 0,
-      zIndex: 1,
-      height: '100vh',
-    }}
-    collapsible
-    collapsed={collapsed}
-    onCollapse={toggle}
-    reverseArrow
-    collapsedWidth={0}
-  >
-    <Anchor
-      bounds={200}
-      targetOffset={84}
-      affix={false}
-      style={{ height: 'calc(100vh - var(--header-height))' }}
-      onClick={toggle}
-    >
-      {links.map((item) => (
-        <Link
-          href={item.link}
-          title={item.title}
-          key={item.link}
-        />
-      ))}
-    </Anchor>
-  </Sider>
-);
+export const MySider = ({ collapsed, toggle }: IMySiderProps) => {
+  useEffect(() => {
+    if (collapsed) {
+      document.body.classList.remove('no-scroll');
+      return;
+    }
+    document.body.classList.add('no-scroll');
+  }, [collapsed]);
+
+  return (
+    <>
+      <div
+        className="my-sider-outside"
+        onClick={toggle}
+        hidden={collapsed}
+      />
+      <Sider
+        className="my-sider"
+        collapsible
+        collapsed={collapsed}
+        onCollapse={toggle}
+        reverseArrow
+        collapsedWidth={0}
+        style={{
+          position: 'fixed',
+          top: '64px',
+          bottom: 0,
+          right: 0,
+          zIndex: 100,
+          overflow: 'auto',
+        }}
+      >
+        <Anchor
+          bounds={200}
+          targetOffset={84}
+          affix={false}
+          onClick={toggle}
+        >
+          {links.map((item) => (
+            <Link
+              href={item.link}
+              title={item.title}
+              key={item.link}
+            />
+          ))}
+        </Anchor>
+      </Sider>
+    </>
+  );
+};
