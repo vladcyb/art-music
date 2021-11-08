@@ -1,5 +1,5 @@
 import { Anchor, Button, Layout } from 'antd';
-import { Logo } from '../../Logo';
+import { Logo } from './Logo';
 import { MenuOutlined } from '@ant-design/icons';
 import React from 'react';
 import './MyHeader.scss';

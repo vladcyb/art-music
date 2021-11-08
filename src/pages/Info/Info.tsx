@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import { standardGutter } from '../../shared/constants/gutter';
-import { Logo } from '../../components';
+import { Logo } from './Logo';
 import './Info.scss';
 
 
