@@ -114,7 +114,7 @@ h1 {
   overflow: hidden;
 }
 
-a {
+a:not(header a) {
   font-weight: 600;
   color: white;
   text-shadow: 0 0 4px #b93cff;
