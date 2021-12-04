@@ -113,3 +113,18 @@ h1 {
 .no-scroll {
   overflow: hidden;
 }
+
+a {
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 4px #b93cff;
+
+  &:hover,
+  &:focus {
+    color: #d258ff;
+  }
+
+  &:active {
+    color: #dc93ff;
+  }
+}
