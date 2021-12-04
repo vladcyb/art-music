@@ -42,13 +42,13 @@ export const Info = () => (
               позвонить по телефону
               {' '}
               <a href="tel:+79202170035">
-                8 920 217-00-35
+                8 (920) 217-00-35
               </a>
               {' '}
               или написать на
               почту
               {' '}
-              <a href="mailto:vmb36@yandex.ru">VMB36@yandex.ru</a>
+              <a href="mailto:vmb36@yandex.ru">VMB36@yandex.ru</a>.
             </p>
             {/*
             <p>
