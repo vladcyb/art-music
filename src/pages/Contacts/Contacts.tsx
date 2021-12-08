@@ -34,21 +34,26 @@ export const Contacts = () => {
           <h1 className="contacts__title">Контакты</h1>
           <p>
             <span className="contacts__label">Адрес:</span>
-            <a className="contacts__value" href="https://yandex.ru/maps/-/CCUm6LwtdC" target="_blank" rel="noreferrer">
+            <a
+              className="contacts__value link"
+              href="https://yandex.ru/maps/-/CCUm6LwtdC"
+              target="_blank"
+              rel="noreferrer"
+            >
               г. Воронеж, ул.&nbsp;Машиностроителей,&nbsp;д.&nbsp;82
             </a>
           </p>
           <p>
             <span className="contacts__label">Телефон:</span>
             <span className="contacts__value">
-              <a className="contacts__phone" href="tel:+79202170035">
+              <a className="contacts__phone link" href="tel:+79202170035">
                 +7 920 217-00-35
               </a>
             </span>
           </p>
           <p>
             <span className="contacts__label">Email:</span>
-            <a className="contacts__value" href="mailto:vmb36@yandex.ru">
+            <a className="contacts__value link" href="mailto:vmb36@yandex.ru">
               vmb36@yandex.ru
             </a>
           </p>

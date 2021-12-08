@@ -22,9 +22,9 @@ export const Brands = () => (
     </Col>
     <Col {...brandsColProps}>
       <h3 className="brands__subtitle">
-            Звуковое оборудование<br />и&nbsp;музыкальные инструменты:
+        Звуковое оборудование<br />и&nbsp;музыкальные инструменты:
       </h3>
-      <ul>
+      <ul className="brands__list">
         <li>Mackie</li>
         <li>Yamaha</li>
         <li>Das&nbsp;Audio</li>
@@ -40,13 +40,13 @@ export const Brands = () => (
         <li>Schecter</li>
         <li>Artesia</li>
         <li>Ringway</li>
-        <li>SE Audiotechnik</li>
+        <li>SE&nbsp;Audiotechnik</li>
         <li>Phonic</li>
       </ul>
     </Col>
     <Col {...brandsColProps}>
       <h3 className="brands__subtitle">Световое оборудование:</h3>
-      <ul>
+      <ul className="brands__list">
         <li>INVOLIGHT</li>
         <li>ADJ</li>
         <li>Highendled</li>
@@ -59,7 +59,7 @@ export const Brands = () => (
     </Col>
     <Col {...brandsColProps}>
       <h3 className="brands__subtitle">Аксессуары&nbsp;и&nbsp;коммутация:</h3>
-      <ul>
+      <ul className="brands__list">
         <li>GATOR</li>
         <li>ONSTAGE</li>
         <li>PLANET WAVES</li>

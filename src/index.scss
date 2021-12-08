@@ -114,10 +114,11 @@ h1 {
   overflow: hidden;
 }
 
-a:not(header a) {
+.link {
   font-weight: 600;
   color: white;
   text-shadow: 0 0 4px #b93cff;
+  white-space: nowrap;
 
   &:hover,
   &:focus {

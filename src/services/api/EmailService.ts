@@ -29,7 +29,7 @@ export class EmailService {
       });
     }
 
-    return axios.post('/callMe', data, { withCredentials: true });
+    return axios.post('/api/callMe', data, { withCredentials: true });
   }
 }
 

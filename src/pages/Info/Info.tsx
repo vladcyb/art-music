@@ -41,14 +41,14 @@ export const Info = () => (
               Для более подробной информации Вы можете
               позвонить по телефону
               {' '}
-              <a href="tel:+79202170035">
+              <a className="link" href="tel:+79202170035">
                 8 (920) 217-00-35
               </a>
               {' '}
               или написать на
               почту
               {' '}
-              <a href="mailto:vmb36@yandex.ru">VMB36@yandex.ru</a>.
+              <a className="link" href="mailto:vmb36@yandex.ru">VMB36@yandex.ru</a>.
             </p>
             {/*
             <p>
